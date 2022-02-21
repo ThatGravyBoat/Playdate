@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "x",
+    "y",
+    "z"
+  ],
+  "key": {
+    "x": {
+      "item": "minecraft:pink_dye"
+    },
+    "y": {
+      "item": "playdate:stuffing"
+    },
+    "z": {
+      "item": "minecraft:yellow_wool"
+    }
+  },
+  "result": {
+    "item": "playdate:happy_sun_toy",
+    "count": 1
+  }
+}

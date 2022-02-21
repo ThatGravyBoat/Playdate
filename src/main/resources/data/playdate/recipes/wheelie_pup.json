@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "x",
+    "y"
+  ],
+  "key": {
+    "x": {
+      "item": "minecraft:bone"
+    },
+    "y": {
+      "item": "playdate:softwood"
+    }
+  },
+  "result": {
+    "item": "playdate:wheelie_pup",
+    "count": 1
+  }
+}

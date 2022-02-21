@@ -1,0 +1,26 @@
+{
+  "itemGroup.playdate.playdate_group":"Playdate",
+
+  "item.playdate.stuffing": "Stuffing",
+  "item.playdate.bottled_soul": "Bottled Soul",
+
+  "block.playdate.softwood": "Softwood",
+  "block.playdate.creeper_plush": "Creeper Plush",
+  "block.playdate.dino_plush": "Dino Plush",
+  "block.playdate.enderman_plush": "Enderman Plush",
+  "block.playdate.happy_sun_plush": "Happy Sun Plush",
+  "block.playdate.lollipop_clown_plush": "Lollipop Clown Plush",
+  "block.playdate.petunia_pig_plush": "Petunia Pig Plush",
+  "block.playdate.rubber_ducky": "Rubber Ducky",
+  "block.playdate.wheelie_pup": "Wheelie Pup",
+  "block.playdate.zombie_plush": "Zombie Plush",
+  "block.playdate.toadstool_studios_plush": "Toadstool Studios Plush",
+
+  "block.playdate.happy_sun_toy": "Happy Sun Toy",
+  "block.playdate.petunia_pig_toy": "Petunia Pig Toy",
+  "block.playdate.lollipop_clown_toy": "Lollipop Clown Toy",
+
+  "entity.playdate.happy_sun": "Happy Sun",
+  "entity.playdate.petunia_pig": "Petunia Pig",
+  "entity.playdate.lollipop_clown": "Lollipop Clown"
+}

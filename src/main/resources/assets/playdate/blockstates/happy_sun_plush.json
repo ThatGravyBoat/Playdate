@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "playdate:block/happy_sun_plush" },
+    "facing=south": { "model": "playdate:block/happy_sun_plush", "y":  180},
+    "facing=west": { "model": "playdate:block/happy_sun_plush", "y":  270},
+    "facing=east": { "model": "playdate:block/happy_sun_plush", "y":  90}
+  }
+}

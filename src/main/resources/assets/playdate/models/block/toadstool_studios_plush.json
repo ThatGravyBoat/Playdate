@@ -1,0 +1,80 @@
+{
+  "credit": "Made with Blockbench",
+  "parent": "builtin/entity",
+  "texture_size": [
+    64,
+    64
+  ],
+  "textures": {
+    "0": "playdate:block/toadstool_studios_plush",
+    "particle": "playdate:block/toadstool_studios_plush"
+  },
+  "display": {
+    "thirdperson_righthand": {
+      "scale": [
+        0.45,
+        0.45,
+        0.45
+      ]
+    },
+    "thirdperson_lefthand": {
+      "scale": [
+        0.45,
+        0.45,
+        0.45
+      ]
+    },
+    "firstperson_righthand": {
+      "scale": [
+        0.45,
+        0.45,
+        0.45
+      ]
+    },
+    "firstperson_lefthand": {
+      "scale": [
+        0.45,
+        0.45,
+        0.45
+      ]
+    },
+    "ground": {
+      "scale": [
+        0.6,
+        0.6,
+        0.6
+      ]
+    },
+    "gui": {
+      "rotation": [
+        15,
+        -145,
+        0
+      ],
+      "translation": [
+        0.25,
+        -5.25,
+        0
+      ],
+      "scale": [
+        0.9,
+        0.9,
+        0.9
+      ]
+    },
+    "head": {
+      "translation": [
+        0,
+        6.25,
+        0
+      ]
+    },
+    "fixed": {
+      "translation": [
+        0,
+        -5.25,
+        -0.5
+      ]
+    }
+  }
+}

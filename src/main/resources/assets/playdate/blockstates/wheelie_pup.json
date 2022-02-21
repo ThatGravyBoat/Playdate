@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "playdate:block/wheelie_pup" },
+    "facing=south": { "model": "playdate:block/wheelie_pup", "y":  180},
+    "facing=west": { "model": "playdate:block/wheelie_pup", "y":  270},
+    "facing=east": { "model": "playdate:block/wheelie_pup", "y":  90}
+  }
+}

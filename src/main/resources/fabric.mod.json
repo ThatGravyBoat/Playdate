@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "playdate",
+  "version": "${version}",
+  "name": "Playdate",
+  "description": "Children's toys and decor with an optional horror aspect!",
+  "authors": [
+    "Dev - ThatGravyBoat",
+    "Former Author - Yoruniii",
+    "Artist - Frogipher",
+    "Walking Animations - Joosh"
+  ],
+  "contact": {
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/playdate",
+    "sources": "https://github.com/Toadstool-Studios/Playdate"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/playdate/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "tech.thatgravyboat.playdate.client.PlaydateClient"
+    ],
+    "main": [
+      "tech.thatgravyboat.playdate.Playdate"
+    ]
+  },
+  "mixins": [
+    "playdate.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.13.2",
+    "fabric": "*",
+    "minecraft": "1.18.1",
+    "geckolib3": "*"
+  }
+}
