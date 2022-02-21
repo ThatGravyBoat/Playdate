@@ -22,8 +22,7 @@ public class ToadstoolPlushieBlock extends PlushieBlock {
         } else {
             Vec3d vec3d = entity.getVelocity();
             if (vec3d.y < 0.0D) {
-                double d = entity instanceof LivingEntity ? 1.0D : 0.8D;
-                entity.setVelocity(vec3d.x, -vec3d.y * 0.9 * d, vec3d.z);
+                entity.setVelocity(vec3d.x, -vec3d.y * (entity instanceof LivingEntity ? 0.9D : 0.72D), vec3d.z);
             }
         }
 

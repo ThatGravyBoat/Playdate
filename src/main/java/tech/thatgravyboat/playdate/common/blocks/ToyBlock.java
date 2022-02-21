@@ -7,6 +7,7 @@ import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemPlacementContext;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsage;
 import net.minecraft.item.Items;
 import net.minecraft.state.StateManager;
@@ -70,8 +71,7 @@ public class ToyBlock extends BlockWithEntity {
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
         var stack = player.getStackInHand(hand);
         if (stack.isOf(ModItems.BOTTLED_SOUL) && !state.get(POSSESSED)) {
-            ItemUsage.consumeHeldItem(world, player, hand);
-            player.giveItemStack(Items.GLASS_BOTTLE.getDefaultStack());
+            ItemUsage.exchangeStack(stack, player, new ItemStack(Items.GLASS_BOTTLE));
             world.setBlockState(pos, state.with(POSSESSED, true));
             return ActionResult.success(world.isClient);
         }

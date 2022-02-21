@@ -23,10 +23,9 @@ public class EndermanPlushieBlock extends PlushieBlock {
     @Override
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
         for (int i = 0; i < 10; ++i) {
-            world.addParticle(ParticleTypes.PORTAL, pos.getX() + world.random.nextDouble(),
-                    pos.getY() + world.random.nextDouble(), pos.getZ() + world.random.nextDouble(),
-                    (world.random.nextDouble() - 0.5D) * 2.0D, -world.random.nextDouble(),
-                    (world.random.nextDouble() - 0.5D) * 2.0D);
+            world.addParticle(ParticleTypes.PORTAL,
+                    pos.getX() + world.random.nextDouble(), pos.getY() + world.random.nextDouble(), pos.getZ() + world.random.nextDouble(),
+                    (world.random.nextDouble() - 0.5D) * 2.0D, -world.random.nextDouble(), (world.random.nextDouble() - 0.5D) * 2.0D);
         }
         world.playSound(null, pos, SoundEvents.ENTITY_ENDERMAN_TELEPORT, SoundCategory.BLOCKS, 0.5F, 1.0F);
         return ActionResult.success(world.isClient);
