@@ -13,13 +13,13 @@ import net.minecraft.entity.decoration.LeashKnotEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.nbt.NbtElement;
+import net.minecraft.nbt.NbtHelper;
 import net.minecraft.network.Packet;
 import net.minecraft.network.packet.s2c.play.EntitySpawnS2CPacket;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
-import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
@@ -56,7 +56,7 @@ public class BalloonEntity extends Entity implements IAnimatable {
             readRopeData();
         }
 
-        if (this.rope == null && this.age > 60) {
+        if (this.rope == null) {
             if (this.holder != null && (!this.holder.isAlive() || !this.isAlive())) {
                 this.detachRope();
             }
@@ -212,8 +212,7 @@ public class BalloonEntity extends Entity implements IAnimatable {
             if (this.holder instanceof LivingEntity) {
                 ropeData.putUuid("uuid", this.holder.getUuid());
             } else if (this.holder instanceof AbstractDecorationEntity decor) {
-                var decorPos = decor.getDecorationBlockPos();
-                ropeData.putIntArray("pos", new int[]{decorPos.getX(), decorPos.getY(), decorPos.getZ()});
+                ropeData.put("pos", NbtHelper.fromBlockPos(decor.getDecorationBlockPos()));
             }
             nbt.put("rope", ropeData);
         } else if (this.rope != null) {
@@ -229,9 +228,10 @@ public class BalloonEntity extends Entity implements IAnimatable {
                     this.attachRope(entity);
                     return;
                 }
-            } else if (this.rope.contains("pos", NbtElement.INT_ARRAY_TYPE)) {
-                var pos = this.rope.getList("pos", NbtElement.INT_ARRAY_TYPE);
-                this.attachRope(LeashKnotEntity.getOrCreate(this.world, new BlockPos(pos.getInt(0), pos.getInt(1), pos.getInt(2))));
+            } else if (this.rope.contains("pos", NbtElement.COMPOUND_TYPE)) {
+                var blockPos = NbtHelper.toBlockPos(this.rope.getCompound("pos"));
+                var orCreate = LeashKnotEntity.getOrCreate(this.world, blockPos);
+                this.attachRope(orCreate);
                 return;
             }
 
