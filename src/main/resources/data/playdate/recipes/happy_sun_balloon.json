@@ -2,14 +2,14 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "playdate:stuffing"
+      "item": "playdate:balloon"
     },
     {
-      "tag": "minecraft:planks"
+      "item": "playdate:happy_sun_plush"
     }
   ],
   "result": {
-    "item": "playdate:softwood",
+    "item": "playdate:happy_sun_balloon",
     "count": 1
   }
 }

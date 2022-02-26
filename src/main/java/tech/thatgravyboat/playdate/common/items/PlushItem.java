@@ -12,7 +12,7 @@ import tech.thatgravyboat.playdate.common.constants.PlushieItem;
 
 public class PlushItem extends BlockItem implements IAnimatable {
 
-    public AnimationFactory factory = new AnimationFactory(this);
+    private final AnimationFactory factory = new AnimationFactory(this);
     public final PlushieItem plushie;
 
     public PlushItem(Block block, PlushieItem plushie, Settings settings) {

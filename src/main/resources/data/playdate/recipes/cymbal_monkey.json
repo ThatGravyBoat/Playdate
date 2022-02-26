@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "y",
+    "x"
+  ],
+  "key": {
+    "x": {
+      "item": "minecraft:note_block"
+    },
+    "y": {
+      "item": "playdate:stuffing"
+    }
+  },
+  "result": {
+    "item": "playdate:cymbal_monkey",
+    "count": 1
+  }
+}

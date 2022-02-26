@@ -20,8 +20,10 @@ import software.bernie.geckolib3.GeckoLib;
 import tech.thatgravyboat.playdate.common.ModPaintings;
 import tech.thatgravyboat.playdate.common.blocks.ModBlockEntities;
 import tech.thatgravyboat.playdate.common.blocks.ModBlocks;
+import tech.thatgravyboat.playdate.common.containers.ModContainers;
 import tech.thatgravyboat.playdate.common.entity.ModEntities;
 import tech.thatgravyboat.playdate.common.items.ModItems;
+import tech.thatgravyboat.playdate.common.recipes.ModRecipes;
 import tech.thatgravyboat.playdate.mixin.ItemAccessor;
 
 public class Playdate implements ModInitializer {
@@ -37,6 +39,8 @@ public class Playdate implements ModInitializer {
         ModItems.register();
         ModEntities.register();
         ModPaintings.register();
+        ModContainers.register();
+        ModRecipes.register();
 
         UseItemCallback.EVENT.register((player, world, hand) -> {
             ItemStack stack = player.getStackInHand(hand);
