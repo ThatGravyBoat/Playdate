@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "playdate:block/sock_monkey" },
+    "facing=south": { "model": "playdate:block/sock_monkey", "y":  180},
+    "facing=west": { "model": "playdate:block/sock_monkey", "y":  270},
+    "facing=east": { "model": "playdate:block/sock_monkey", "y":  90}
+  }
+}

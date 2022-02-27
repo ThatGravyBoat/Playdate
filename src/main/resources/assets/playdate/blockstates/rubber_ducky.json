@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "playdate:block/rubber_ducky" },
+    "facing=south": { "model": "playdate:block/rubber_ducky", "y":  180},
+    "facing=west": { "model": "playdate:block/rubber_ducky", "y":  270},
+    "facing=east": { "model": "playdate:block/rubber_ducky", "y":  90}
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "y",
+    "x"
+  ],
+  "key": {
+    "x": {
+      "item": "minecraft:snowball"
+    },
+    "y": {
+      "item": "playdate:fox_plush"
+    }
+  },
+  "result": {
+    "item": "playdate:snowy_fox_plush",
+    "count": 1
+  }
+}

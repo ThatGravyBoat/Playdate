@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "x",
+    "y"
+  ],
+  "key": {
+    "x": {
+      "item": "minecraft:red_mushroom"
+    },
+    "y": {
+      "item": "playdate:stuffing"
+    }
+  },
+  "result": {
+    "item": "playdate:toadstool_studios_plush",
+    "count": 1
+  }
+}

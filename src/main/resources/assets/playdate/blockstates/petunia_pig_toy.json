@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "playdate:block/petunia_pig_toy" },
+    "facing=south": { "model": "playdate:block/petunia_pig_toy", "y":  180},
+    "facing=west": { "model": "playdate:block/petunia_pig_toy", "y":  270},
+    "facing=east": { "model": "playdate:block/petunia_pig_toy", "y":  90}
+  }
+}

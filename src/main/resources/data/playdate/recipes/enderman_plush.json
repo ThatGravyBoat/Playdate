@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "x",
+    "y"
+  ],
+  "key": {
+    "x": {
+      "item": "minecraft:ender_pearl"
+    },
+    "y": {
+      "item": "playdate:stuffing"
+    }
+  },
+  "result": {
+    "item": "playdate:enderman_plush",
+    "count": 1
+  }
+}
