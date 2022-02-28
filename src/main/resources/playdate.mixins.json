@@ -3,6 +3,7 @@
   "minVersion": "0.8",
   "package": "tech.thatgravyboat.playdate.mixin",
   "compatibilityLevel": "JAVA_17",
+  "refmap": "playdate.refmap.json",
   "mixins": [
     "ItemAccessor"
   ],

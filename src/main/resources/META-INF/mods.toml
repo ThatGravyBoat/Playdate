@@ -6,9 +6,8 @@ modId="playdate"
 version="${file.jarVersion}"
 displayName="Playdate"
 logoFile="icon.png"
-credits="Thanks for this example mod goes to Java"
-authors="Love, Cheese and small house plants"
-description="desc"
+authors="ThatGravyBoat - Dev, Frogipher - Artist, Joosh - Walking Animations"
+description="Children's toys and decor with an optional horror aspect!"
 
 [[dependencies.playdate]]
     modId="forge"
