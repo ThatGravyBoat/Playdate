@@ -31,12 +31,12 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> PETUNIA_PIG_TOY = BLOCKS.register("petunia_pig_toy",
             () -> new ToyBlock(ModEntities.PETUNIA_PIG, ModBlockEntities.PETUNIA_PIG_TOY, PLUSHIE_SETTINGS));
-
     public static final RegistryObject<Block> HAPPY_SUN_TOY = BLOCKS.register("happy_sun_toy",
             () -> new ToyBlock(ModEntities.HAPPY_SUN, ModBlockEntities.HAPPY_SUN_TOY, PLUSHIE_SETTINGS));
-
     public static final RegistryObject<Block> LOLLIPOP_CLOWN_TOY = BLOCKS.register("lollipop_clown_toy",
             () -> new ToyBlock(ModEntities.LOLLIPOP_CLOWN, ModBlockEntities.LOLLIPOP_CLOWN_TOY, PLUSHIE_SETTINGS));
+    public static final RegistryObject<Block> STUFFIE_TOY = BLOCKS.register("stuffie_toy",
+            () -> new ToyBlock(ModEntities.STUFFIE, ModBlockEntities.STUFFIE_TOY, PLUSHIE_SETTINGS));
 
     public static final RegistryObject<Block> CREEPER_PLUSHIE = BLOCKS.register("creeper_plush",
             () -> new CreeperPlushieBlock(ModBlockEntities.CREEPER_PLUSHIE, PLUSHIE_SETTINGS));
@@ -73,4 +73,37 @@ public class ModBlocks {
             () -> new PlushieBlock(ModBlockEntities.SOCK_MONKEY, PLUSHIE_SETTINGS));
     public static final RegistryObject<Block> ROBOT = BLOCKS.register("robot",
             () -> new PlushieBlock(ModBlockEntities.ROBOT, METAL_SETTINGS));
+
+    //region Cuddle Cubs
+    public static final RegistryObject<Block> AROMANTIC_CUB = BLOCKS.register("aromantic_cub",
+            () -> new PlushieBlock(ModBlockEntities.AROMANTIC_CUB, PLUSHIE_SETTINGS));
+    public static final RegistryObject<Block> ASEXUAL_CUB = BLOCKS.register("asexual_cub",
+            () -> new PlushieBlock(ModBlockEntities.ASEXUAL_CUB, PLUSHIE_SETTINGS));
+    public static final RegistryObject<Block> BISEXUAL_CUB = BLOCKS.register("bisexual_cub",
+            () -> new PlushieBlock(ModBlockEntities.BISEXUAL_CUB, PLUSHIE_SETTINGS));
+    public static final RegistryObject<Block> PRIDE_CUB = BLOCKS.register("pride_cub",
+            () -> new PlushieBlock(ModBlockEntities.PRIDE_CUB, PLUSHIE_SETTINGS));
+    public static final RegistryObject<Block> GENDERQUEER_CUB = BLOCKS.register("genderqueer_cub",
+            () -> new PlushieBlock(ModBlockEntities.GENDERQUEER_CUB, PLUSHIE_SETTINGS));
+    public static final RegistryObject<Block> LESBIAN_CUB = BLOCKS.register("lesbian_cub",
+            () -> new PlushieBlock(ModBlockEntities.LESBIAN_CUB, PLUSHIE_SETTINGS));
+    public static final RegistryObject<Block> NONBINARY_CUB = BLOCKS.register("nonbinary_cub",
+            () -> new PlushieBlock(ModBlockEntities.NONBINARY_CUB, PLUSHIE_SETTINGS));
+    public static final RegistryObject<Block> PANSEXUAL_CUB = BLOCKS.register("pansexual_cub",
+            () -> new PlushieBlock(ModBlockEntities.PANSEXUAL_CUB, PLUSHIE_SETTINGS));
+    public static final RegistryObject<Block> TRANS_CUB = BLOCKS.register("trans_cub",
+            () -> new PlushieBlock(ModBlockEntities.TRANS_CUB, PLUSHIE_SETTINGS));
+    public static final RegistryObject<Block> PANDA_CUB = BLOCKS.register("panda_cub",
+            () -> new PlushieBlock(ModBlockEntities.PANDA_CUB, PLUSHIE_SETTINGS));
+    public static final RegistryObject<Block> POLAR_CUB = BLOCKS.register("polar_cub",
+            () -> new PlushieBlock(ModBlockEntities.POLAR_CUB, PLUSHIE_SETTINGS));
+    public static final RegistryObject<Block> STUFFIE_CUB = BLOCKS.register("stuffie_cub",
+            () -> new PlushieBlock(ModBlockEntities.STUFFIE_CUB, PLUSHIE_SETTINGS));
+    public static final RegistryObject<Block> COOL_CUB = BLOCKS.register("cool_cub",
+            () -> new PlushieBlock(ModBlockEntities.COOL_CUB, PLUSHIE_SETTINGS));
+    public static final RegistryObject<Block> BROWN_CUB = BLOCKS.register("brown_cub",
+            () -> new PlushieBlock(ModBlockEntities.BROWN_CUB, PLUSHIE_SETTINGS));
+    public static final RegistryObject<Block> HONEY_CUB = BLOCKS.register("honey_cub",
+            () -> new PlushieBlock(ModBlockEntities.HONEY_CUB, PLUSHIE_SETTINGS));
+    //endregion
 }

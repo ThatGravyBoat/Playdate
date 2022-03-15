@@ -1,8 +1,5 @@
 {
   "variants": {
-    "facing=north": { "model": "playdate:block/piggy_bank" },
-    "facing=south": { "model": "playdate:block/piggy_bank", "y":  180},
-    "facing=west": { "model": "playdate:block/piggy_bank", "y":  270},
-    "facing=east": { "model": "playdate:block/piggy_bank", "y":  90}
+    "": { "model": "playdate:block/piggy_bank" }
   }
 }

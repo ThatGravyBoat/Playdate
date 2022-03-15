@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "x",
+    "y",
+    "z"
+  ],
+  "key": {
+    "x": {
+      "item": "minecraft:red_dye"
+    },
+    "y": {
+      "item": "playdate:stuffing"
+    },
+    "z": {
+      "item": "minecraft:brown_wool"
+    }
+  },
+  "result": {
+    "item": "playdate:stuffie_toy",
+    "count": 1
+  }
+}

@@ -8,6 +8,7 @@ import net.minecraftforge.registries.RegistryObject;
 import tech.thatgravyboat.playdate.PlayDate;
 import tech.thatgravyboat.playdate.common.blocks.ModBlocks;
 import tech.thatgravyboat.playdate.common.constants.BalloonType;
+import tech.thatgravyboat.playdate.common.constants.CuddleCub;
 import tech.thatgravyboat.playdate.common.constants.PlushieItem;
 
 public class ModItems {
@@ -26,6 +27,7 @@ public class ModItems {
     public static final RegistryObject<Item> PETUNIA_PIG_TOY = ITEMS.register("petunia_pig_toy", () -> new PlushItem(ModBlocks.PETUNIA_PIG_TOY.get(), PlushieItem.PETUNIA_PIG_TOY, GROUP_SETTINGS));
     public static final RegistryObject<Item> HAPPY_SUN_TOY = ITEMS.register("happy_sun_toy", () -> new PlushItem(ModBlocks.HAPPY_SUN_TOY.get(), PlushieItem.HAPPY_SUN_TOY, GROUP_SETTINGS));
     public static final RegistryObject<Item> LOLLIPOP_CLOWN_TOY = ITEMS.register("lollipop_clown_toy", () -> new PlushItem(ModBlocks.LOLLIPOP_CLOWN_TOY.get(), PlushieItem.LOLLIPOP_CLOWN_TOY, GROUP_SETTINGS));
+    public static final RegistryObject<Item> STUFFIE_TOY = ITEMS.register("stuffie_toy", () -> new PlushItem(ModBlocks.STUFFIE_TOY.get(), PlushieItem.STUFFIE_TOY, GROUP_SETTINGS));
 
     public static final RegistryObject<Item> CREEPER_PLUSHIE = ITEMS.register("creeper_plush", () -> new PlushItem(ModBlocks.CREEPER_PLUSHIE.get(), PlushieItem.CREEPER, GROUP_SETTINGS));
     public static final RegistryObject<Item> DINO_PLUSHIE = ITEMS.register("dino_plush", () -> new PlushItem(ModBlocks.DINO_PLUSHIE.get(), PlushieItem.DINO, GROUP_SETTINGS));
@@ -44,5 +46,39 @@ public class ModItems {
     public static final RegistryObject<Item> RABBIT_PLUSHIE = ITEMS.register("rabbit_plush", () -> new PlushItem(ModBlocks.RABBIT_PLUSHIE.get(), PlushieItem.RABBIT, GROUP_SETTINGS));
     public static final RegistryObject<Item> SOCK_MONKEY = ITEMS.register("sock_monkey", () -> new PlushItem(ModBlocks.SOCK_MONKEY.get(), PlushieItem.SOCK_MONKEY, GROUP_SETTINGS));
     public static final RegistryObject<Item> ROBOT = ITEMS.register("robot", () -> new PlushItem(ModBlocks.ROBOT.get(), PlushieItem.ROBOT, GROUP_SETTINGS));
+
+    //region Cuddle Cubs
+    public static final RegistryObject<Item> CUDDLE_HEART = ITEMS.register("cuddle_heart", () -> new Item(GROUP_SETTINGS));
+    public static final RegistryObject<Item> AROMANTIC_CUB = ITEMS.register("aromantic_cub",
+            () -> new CuddleCubItem(ModBlocks.AROMANTIC_CUB.get(), CuddleCub.AROMANTIC, GROUP_SETTINGS));
+    public static final RegistryObject<Item> ASEXUAL_CUB = ITEMS.register("asexual_cub",
+            () -> new CuddleCubItem(ModBlocks.ASEXUAL_CUB.get(), CuddleCub.ASEXUAL, GROUP_SETTINGS));
+    public static final RegistryObject<Item> BISEXUAL_CUB = ITEMS.register("bisexual_cub",
+            () -> new CuddleCubItem(ModBlocks.BISEXUAL_CUB.get(), CuddleCub.BISEXUAL, GROUP_SETTINGS));
+    public static final RegistryObject<Item> PRIDE_CUB = ITEMS.register("pride_cub",
+            () -> new CuddleCubItem(ModBlocks.PRIDE_CUB.get(), CuddleCub.PRIDE, GROUP_SETTINGS));
+    public static final RegistryObject<Item> GENDERQUEER_CUB = ITEMS.register("genderqueer_cub",
+            () -> new CuddleCubItem(ModBlocks.GENDERQUEER_CUB.get(), CuddleCub.GENDERQUEER, GROUP_SETTINGS));
+    public static final RegistryObject<Item> LESBIAN_CUB = ITEMS.register("lesbian_cub",
+            () -> new CuddleCubItem(ModBlocks.LESBIAN_CUB.get(), CuddleCub.LESBIAN, GROUP_SETTINGS));
+    public static final RegistryObject<Item> NONBINARY_CUB = ITEMS.register("nonbinary_cub",
+            () -> new CuddleCubItem(ModBlocks.NONBINARY_CUB.get(), CuddleCub.NONBINARY, GROUP_SETTINGS));
+    public static final RegistryObject<Item> PANSEXUAL_CUB = ITEMS.register("pansexual_cub",
+            () -> new CuddleCubItem(ModBlocks.PANSEXUAL_CUB.get(), CuddleCub.PANSEXUAL, GROUP_SETTINGS));
+    public static final RegistryObject<Item> TRANS_CUB = ITEMS.register("trans_cub",
+            () -> new CuddleCubItem(ModBlocks.TRANS_CUB.get(), CuddleCub.TRANS, GROUP_SETTINGS));
+    public static final RegistryObject<Item> PANDA_CUB = ITEMS.register("panda_cub",
+            () -> new CuddleCubItem(ModBlocks.PANDA_CUB.get(), CuddleCub.PANDA, GROUP_SETTINGS));
+    public static final RegistryObject<Item> POLAR_CUB = ITEMS.register("polar_cub",
+            () -> new CuddleCubItem(ModBlocks.POLAR_CUB.get(), CuddleCub.POLAR, GROUP_SETTINGS));
+    public static final RegistryObject<Item> STUFFIE_CUB = ITEMS.register("stuffie_cub",
+            () -> new CuddleCubItem(ModBlocks.STUFFIE_CUB.get(), CuddleCub.STUFFIE, GROUP_SETTINGS));
+    public static final RegistryObject<Item> COOL_CUB = ITEMS.register("cool_cub",
+            () -> new CuddleCubItem(ModBlocks.COOL_CUB.get(), CuddleCub.COOL, GROUP_SETTINGS));
+    public static final RegistryObject<Item> BROWN_CUB = ITEMS.register("brown_cub",
+            () -> new CuddleCubItem(ModBlocks.BROWN_CUB.get(), CuddleCub.BROWN, GROUP_SETTINGS));
+    public static final RegistryObject<Item> HONEY_CUB = ITEMS.register("honey_cub",
+            () -> new CuddleCubItem(ModBlocks.HONEY_CUB.get(), CuddleCub.HONEY, GROUP_SETTINGS));
+    //endregion
 
 }

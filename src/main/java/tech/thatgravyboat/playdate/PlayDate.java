@@ -1,20 +1,15 @@
 package tech.thatgravyboat.playdate;
 
-import net.minecraft.client.Minecraft;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.stats.Stats;
 import net.minecraft.world.InteractionResult;
-import net.minecraft.world.entity.ai.attributes.Attribute;
 import net.minecraft.world.entity.ai.attributes.Attributes;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.ItemUtils;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.ClipContext;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.HitResult;
@@ -37,9 +32,6 @@ import tech.thatgravyboat.playdate.common.item.ModItems;
 import tech.thatgravyboat.playdate.common.paintings.ModPaintings;
 import tech.thatgravyboat.playdate.common.recipes.ModRecipes;
 import tech.thatgravyboat.playdate.mixin.ItemAccessor;
-
-import javax.swing.*;
-import java.rmi.registry.RegistryHandler;
 
 @Mod(PlayDate.MODID)
 public class PlayDate {
@@ -81,6 +73,11 @@ public class PlayDate {
         event.put(ModEntities.PETUNIA_PIG.get(), ToyEntity.createMobAttributes()
                 .add(Attributes.MAX_HEALTH, 60)
                 .add(Attributes.ATTACK_DAMAGE, 4)
+                .add(Attributes.FOLLOW_RANGE, 60)
+                .add(Attributes.MOVEMENT_SPEED, 0.4).build());
+        event.put(ModEntities.STUFFIE.get(), ToyEntity.createMobAttributes()
+                .add(Attributes.MAX_HEALTH, 80)
+                .add(Attributes.ATTACK_DAMAGE, 6)
                 .add(Attributes.FOLLOW_RANGE, 60)
                 .add(Attributes.MOVEMENT_SPEED, 0.4).build());
     }

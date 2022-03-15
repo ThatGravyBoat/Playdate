@@ -1,11 +1,11 @@
 package tech.thatgravyboat.playdate.common.blocks;
 
 import net.minecraft.core.BlockPos;
+import net.minecraft.util.Mth;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.EntityBlock;
-import net.minecraft.world.level.block.HorizontalDirectionalBlock;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
@@ -17,8 +17,9 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.function.Supplier;
 
-public class PlushieBlock extends HorizontalDirectionalBlock implements EntityBlock {
+public class PlushieBlock extends Block implements EntityBlock {
 
+    public static final EightDirectionProperty FACING = new EightDirectionProperty();
     public static final VoxelShape SHAPE = Block.box(2.5, 0, 2.5, 13.5, 14, 13.5);
 
     private final Supplier<BlockEntityType<?>> blockEntityType;
@@ -36,12 +37,13 @@ public class PlushieBlock extends HorizontalDirectionalBlock implements EntityBl
     @Nullable
     @Override
     public BlockState getStateForPlacement(BlockPlaceContext ctx) {
-        return this.defaultBlockState().setValue(HorizontalDirectionalBlock.FACING, ctx.getHorizontalDirection().getOpposite());
+        var value = EightDirectionProperty.Direction.VALUES[Mth.floor((double) (ctx.getRotation() * 8.0F / 360.0F) + 0.5D) & 7];
+        return this.defaultBlockState().setValue(FACING, value);
     }
 
     @Override
     protected void createBlockStateDefinition(StateDefinition.@NotNull Builder<Block, BlockState> builder) {
-        builder.add(HorizontalDirectionalBlock.FACING);
+        builder.add(FACING);
     }
 
     @Nullable

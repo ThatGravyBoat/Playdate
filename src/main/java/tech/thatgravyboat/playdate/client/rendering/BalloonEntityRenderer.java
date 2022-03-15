@@ -3,6 +3,7 @@ package tech.thatgravyboat.playdate.client.rendering;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.math.Matrix4f;
+import com.mojang.math.Vector3f;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.LightTexture;
 import net.minecraft.client.renderer.MultiBufferSource;
@@ -66,6 +67,7 @@ public class BalloonEntityRenderer extends EntityRenderer<BalloonEntity> impleme
         modelProvider.setLivingAnimations(entity, this.getUniqueID(entity), predicate);
 
         stack.translate(0, 0.01f, 0);
+        stack.mulPose(Vector3f.YN.rotationDegrees(entity.getUUID().getLeastSignificantBits() % 360));
         Minecraft.getInstance().getTextureManager().bindForSetup(getTextureLocation(entity));
         RenderType renderType = getRenderType(entity, partialTicks, stack, bufferIn, null, packedLightIn, getTextureLocation(entity));
         boolean invis = entity.isInvisibleTo(Minecraft.getInstance().player);

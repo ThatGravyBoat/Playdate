@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "H",
+    "S",
+    "l"
+  ],
+  "key": {
+    "S": {
+      "item": "playdate:stuffing"
+    },
+    "H": {
+      "item": "playdate:cuddle_heart"
+    },
+    "l": {
+      "item": "minecraft:leather"
+    }
+  },
+  "result": {
+    "item": "playdate:cool_cub",
+    "count": 1
+  }
+}

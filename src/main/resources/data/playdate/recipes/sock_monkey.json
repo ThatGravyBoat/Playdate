@@ -6,7 +6,7 @@
   ],
   "key": {
     "x": {
-      "tag": "minecraft:wool"
+      "item": "minecraft:string"
     },
     "y": {
       "item": "playdate:stuffing"

@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "rHg",
+    "oSb",
+    "y p"
+  ],
+  "key": {
+    "S": {
+      "item": "playdate:stuffing"
+    },
+    "H": {
+      "item": "playdate:cuddle_heart"
+    },
+    "r": {
+      "item": "minecraft:red_dye"
+    },
+    "o": {
+      "item": "minecraft:orange_dye"
+    },
+    "y": {
+      "item": "minecraft:yellow_dye"
+    },
+    "g": {
+      "item": "minecraft:green_dye"
+    },
+    "p": {
+      "item": "minecraft:purple_dye"
+    },
+    "b": {
+      "item": "minecraft:blue_dye"
+    }
+  },
+  "result": {
+    "item": "playdate:pride_cub",
+    "count": 1
+  }
+}

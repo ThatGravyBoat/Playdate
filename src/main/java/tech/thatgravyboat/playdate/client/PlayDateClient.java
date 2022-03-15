@@ -36,6 +36,21 @@ public class PlayDateClient {
         BlockEntityRenderers.register(ModBlockEntities.RABBIT_PLUSHIE.get(), PlushieBlockRenderer::create);
         BlockEntityRenderers.register(ModBlockEntities.SOCK_MONKEY.get(), PlushieBlockRenderer::create);
         BlockEntityRenderers.register(ModBlockEntities.ROBOT.get(), PlushieBlockRenderer::create);
+        BlockEntityRenderers.register(ModBlockEntities.AROMANTIC_CUB.get(), PlushieBlockRenderer::createCuddleCub);
+        BlockEntityRenderers.register(ModBlockEntities.ASEXUAL_CUB.get(), PlushieBlockRenderer::createCuddleCub);
+        BlockEntityRenderers.register(ModBlockEntities.BISEXUAL_CUB.get(), PlushieBlockRenderer::createCuddleCub);
+        BlockEntityRenderers.register(ModBlockEntities.PRIDE_CUB.get(), PlushieBlockRenderer::createCuddleCub);
+        BlockEntityRenderers.register(ModBlockEntities.GENDERQUEER_CUB.get(), PlushieBlockRenderer::createCuddleCub);
+        BlockEntityRenderers.register(ModBlockEntities.LESBIAN_CUB.get(), PlushieBlockRenderer::createCuddleCub);
+        BlockEntityRenderers.register(ModBlockEntities.NONBINARY_CUB.get(), PlushieBlockRenderer::createCuddleCub);
+        BlockEntityRenderers.register(ModBlockEntities.PANSEXUAL_CUB.get(), PlushieBlockRenderer::createCuddleCub);
+        BlockEntityRenderers.register(ModBlockEntities.TRANS_CUB.get(), PlushieBlockRenderer::createCuddleCub);
+        BlockEntityRenderers.register(ModBlockEntities.PANDA_CUB.get(), PlushieBlockRenderer::createCuddleCub);
+        BlockEntityRenderers.register(ModBlockEntities.POLAR_CUB.get(), PlushieBlockRenderer::createCuddleCub);
+        BlockEntityRenderers.register(ModBlockEntities.STUFFIE_CUB.get(), PlushieBlockRenderer::createCuddleCub);
+        BlockEntityRenderers.register(ModBlockEntities.COOL_CUB.get(), PlushieBlockRenderer::createCuddleCub);
+        BlockEntityRenderers.register(ModBlockEntities.BROWN_CUB.get(), PlushieBlockRenderer::createCuddleCub);
+        BlockEntityRenderers.register(ModBlockEntities.HONEY_CUB.get(), PlushieBlockRenderer::createCuddleCub);
 
         EntityRenderers.register(ModEntities.PETUNIA_PIG.get(), PlushieEntityRenderer::create);
         BlockEntityRenderers.register(ModBlockEntities.PETUNIA_PIG_TOY.get(), ToyBlockRenderer::create);
@@ -45,6 +60,9 @@ public class PlayDateClient {
 
         EntityRenderers.register(ModEntities.LOLLIPOP_CLOWN.get(), PlushieEntityRenderer::create);
         BlockEntityRenderers.register(ModBlockEntities.LOLLIPOP_CLOWN_TOY.get(), ToyBlockRenderer::create);
+
+        EntityRenderers.register(ModEntities.STUFFIE.get(), PlushieEntityRenderer::create);
+        BlockEntityRenderers.register(ModBlockEntities.STUFFIE_TOY.get(), ToyBlockRenderer::create);
 
         EntityRenderers.register(ModEntities.BALLOON.get(), BalloonEntityRenderer::new);
 

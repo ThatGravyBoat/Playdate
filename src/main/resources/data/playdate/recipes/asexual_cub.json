@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "bHg",
+    "pSw"
+  ],
+  "key": {
+    "S": {
+      "item": "playdate:stuffing"
+    },
+    "H": {
+      "item": "playdate:cuddle_heart"
+    },
+    "g": {
+      "item": "minecraft:gray_dye"
+    },
+    "p": {
+      "item": "minecraft:purple_dye"
+    },
+    "w": {
+      "item": "minecraft:white_dye"
+    },
+    "b": {
+      "item": "minecraft:black_dye"
+    }
+  },
+  "result": {
+    "item": "playdate:asexual_cub",
+    "count": 1
+  }
+}

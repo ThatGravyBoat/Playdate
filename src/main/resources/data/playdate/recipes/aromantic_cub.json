@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "GHg",
+    "lSw",
+    " b "
+  ],
+  "key": {
+    "G": {
+      "item": "minecraft:green_dye"
+    },
+    "S": {
+      "item": "playdate:stuffing"
+    },
+    "H": {
+      "item": "playdate:cuddle_heart"
+    },
+    "g": {
+      "item": "minecraft:gray_dye"
+    },
+    "l": {
+      "item": "minecraft:light_gray_dye"
+    },
+    "w": {
+      "item": "minecraft:white_dye"
+    },
+    "b": {
+      "item": "minecraft:black_dye"
+    }
+  },
+  "result": {
+    "item": "playdate:aromantic_cub",
+    "count": 1
+  }
+}

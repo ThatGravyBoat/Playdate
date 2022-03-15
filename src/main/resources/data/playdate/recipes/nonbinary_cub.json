@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "yHp",
+    "wSb"
+  ],
+  "key": {
+    "S": {
+      "item": "playdate:stuffing"
+    },
+    "H": {
+      "item": "playdate:cuddle_heart"
+    },
+    "y": {
+      "item": "minecraft:yellow_dye"
+    },
+    "p": {
+      "item": "minecraft:purple_dye"
+    },
+    "w": {
+      "item": "minecraft:white_dye"
+    },
+    "b": {
+      "item": "minecraft:black_dye"
+    }
+  },
+  "result": {
+    "item": "playdate:nonbinary_cub",
+    "count": 1
+  }
+}

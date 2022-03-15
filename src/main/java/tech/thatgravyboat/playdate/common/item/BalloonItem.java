@@ -50,6 +50,6 @@ public class BalloonItem extends Item implements DyeableLeatherItem {
 
     private static boolean isRainbow(ItemStack stack) {
         CompoundTag nbt = stack.getTag();
-        return (nbt != null && nbt.getBoolean("rainbow")) || stack.getDisplayName().getString().equals("jeb_");
+        return (nbt != null && nbt.getBoolean("rainbow")) || stack.getHoverName().getString().equals("jeb_");
     }
 }

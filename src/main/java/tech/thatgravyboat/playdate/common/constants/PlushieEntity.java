@@ -19,6 +19,11 @@ public enum PlushieEntity {
             modId("geo/princess.geo.json"),
             modId("textures/entity/possessed_petunia_pig.png"),
             modId("animations/petunia.animation.json")
+    ),
+    STUFFIE(
+            modId("geo/stuffie.geo.json"),
+            modId("textures/entity/stuffie_possessed.png"),
+            modId("animations/stuffie.animation.json")
     );
 
     public final ResourceLocation model;
