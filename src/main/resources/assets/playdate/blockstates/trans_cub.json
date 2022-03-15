@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "playdate:block/trans_cub" }
+  }
+}

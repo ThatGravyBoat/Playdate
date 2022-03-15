@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "bHm",
+    " S ",
+    " y "
+  ],
+  "key": {
+    "S": {
+      "item": "playdate:stuffing"
+    },
+    "H": {
+      "item": "playdate:cuddle_heart"
+    },
+    "b": {
+      "item": "minecraft:light_blue_dye"
+    },
+    "y": {
+      "item": "minecraft:yellow_dye"
+    },
+    "m": {
+      "item": "minecraft:magenta_dye"
+    }
+  },
+  "result": {
+    "item": "playdate:pansexual_cub",
+    "count": 1
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "playdate:block/plush",
+  "textures": {
+    "0": "playdate:block/cuddlecubs/asexual",
+    "particle": "playdate:block/cuddlecubs/asexual"
+  }
+}

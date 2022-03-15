@@ -104,6 +104,16 @@ public enum PlushieItem {
             modId("geo/wind_up_robot.geo.json"),
             modId("textures/block/robot.png"),
             modId("animations/empty.animation.json")
+    ),
+    CUDDLE_CUB(
+            modId("geo/teddy_bear.geo.json"),
+            modId("textures/block/cuddlecubs/stuffie_plush.png"), //Not used as overridden in custom cuddle cub model
+            modId("animations/empty.animation.json")
+    ),
+    STUFFIE_TOY(
+            modId("geo/stuffie.geo.json"),
+            modId("textures/block/stuffie.png"),
+            modId("animations/empty.animation.json")
     );
 
     public final Identifier model;

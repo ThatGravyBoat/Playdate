@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "S",
+    "R"
+  ],
+  "key": {
+    "R": {
+      "item": "minecraft:redstone"
+    },
+    "S": {
+      "item": "playdate:stuffing"
+    }
+  },
+  "result": {
+    "item": "playdate:cuddle_heart",
+    "count": 1
+  }
+}

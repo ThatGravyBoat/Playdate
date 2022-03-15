@@ -75,6 +75,53 @@ public class PlaydateClient implements ClientModInitializer {
         BlockEntityRendererRegistry.register(ModBlockEntities.ROBOT, PlushieBlockRenderer::create);
         GeoItemRenderer.registerItemRenderer(ModItems.ROBOT, PlushieItemRenderer.create());
 
+        //region Cuddle Cubs
+        BlockEntityRendererRegistry.register(ModBlockEntities.AROMANTIC_CUB, PlushieBlockRenderer::createCuddleCub);
+        GeoItemRenderer.registerItemRenderer(ModItems.AROMANTIC_CUB, PlushieItemRenderer.createCuddleCub());
+
+        BlockEntityRendererRegistry.register(ModBlockEntities.ASEXUAL_CUB, PlushieBlockRenderer::createCuddleCub);
+        GeoItemRenderer.registerItemRenderer(ModItems.ASEXUAL_CUB, PlushieItemRenderer.createCuddleCub());
+
+        BlockEntityRendererRegistry.register(ModBlockEntities.BISEXUAL_CUB, PlushieBlockRenderer::createCuddleCub);
+        GeoItemRenderer.registerItemRenderer(ModItems.BISEXUAL_CUB, PlushieItemRenderer.createCuddleCub());
+
+        BlockEntityRendererRegistry.register(ModBlockEntities.PRIDE_CUB, PlushieBlockRenderer::createCuddleCub);
+        GeoItemRenderer.registerItemRenderer(ModItems.PRIDE_CUB, PlushieItemRenderer.createCuddleCub());
+
+        BlockEntityRendererRegistry.register(ModBlockEntities.GENDERQUEER_CUB, PlushieBlockRenderer::createCuddleCub);
+        GeoItemRenderer.registerItemRenderer(ModItems.GENDERQUEER_CUB, PlushieItemRenderer.createCuddleCub());
+
+        BlockEntityRendererRegistry.register(ModBlockEntities.LESBIAN_CUB, PlushieBlockRenderer::createCuddleCub);
+        GeoItemRenderer.registerItemRenderer(ModItems.LESBIAN_CUB, PlushieItemRenderer.createCuddleCub());
+
+        BlockEntityRendererRegistry.register(ModBlockEntities.NONBINARY_CUB, PlushieBlockRenderer::createCuddleCub);
+        GeoItemRenderer.registerItemRenderer(ModItems.NONBINARY_CUB, PlushieItemRenderer.createCuddleCub());
+
+        BlockEntityRendererRegistry.register(ModBlockEntities.PANSEXUAL_CUB, PlushieBlockRenderer::createCuddleCub);
+        GeoItemRenderer.registerItemRenderer(ModItems.PANSEXUAL_CUB, PlushieItemRenderer.createCuddleCub());
+
+        BlockEntityRendererRegistry.register(ModBlockEntities.TRANS_CUB, PlushieBlockRenderer::createCuddleCub);
+        GeoItemRenderer.registerItemRenderer(ModItems.TRANS_CUB, PlushieItemRenderer.createCuddleCub());
+
+        BlockEntityRendererRegistry.register(ModBlockEntities.PANDA_CUB, PlushieBlockRenderer::createCuddleCub);
+        GeoItemRenderer.registerItemRenderer(ModItems.PANDA_CUB, PlushieItemRenderer.createCuddleCub());
+
+        BlockEntityRendererRegistry.register(ModBlockEntities.POLAR_CUB, PlushieBlockRenderer::createCuddleCub);
+        GeoItemRenderer.registerItemRenderer(ModItems.POLAR_CUB, PlushieItemRenderer.createCuddleCub());
+
+        BlockEntityRendererRegistry.register(ModBlockEntities.STUFFIE_CUB, PlushieBlockRenderer::createCuddleCub);
+        GeoItemRenderer.registerItemRenderer(ModItems.STUFFIE_CUB, PlushieItemRenderer.createCuddleCub());
+
+        BlockEntityRendererRegistry.register(ModBlockEntities.COOL_CUB, PlushieBlockRenderer::createCuddleCub);
+        GeoItemRenderer.registerItemRenderer(ModItems.COOL_CUB, PlushieItemRenderer.createCuddleCub());
+
+        BlockEntityRendererRegistry.register(ModBlockEntities.BROWN_CUB, PlushieBlockRenderer::createCuddleCub);
+        GeoItemRenderer.registerItemRenderer(ModItems.BROWN_CUB, PlushieItemRenderer.createCuddleCub());
+
+        BlockEntityRendererRegistry.register(ModBlockEntities.HONEY_CUB, PlushieBlockRenderer::createCuddleCub);
+        GeoItemRenderer.registerItemRenderer(ModItems.HONEY_CUB, PlushieItemRenderer.createCuddleCub());
+        //endregion
+
         EntityRendererRegistry.register(ModEntities.PETUNIA_PIG, PlushieEntityRenderer::create);
         BlockEntityRendererRegistry.register(ModBlockEntities.PETUNIA_PIG_TOY, ToyBlockRenderer::create);
         GeoItemRenderer.registerItemRenderer(ModItems.PETUNIA_PIG_TOY, PlushieItemRenderer.create());
@@ -86,6 +133,10 @@ public class PlaydateClient implements ClientModInitializer {
         EntityRendererRegistry.register(ModEntities.LOLLIPOP_CLOWN, PlushieEntityRenderer::create);
         BlockEntityRendererRegistry.register(ModBlockEntities.LOLLIPOP_CLOWN_TOY, ToyBlockRenderer::create);
         GeoItemRenderer.registerItemRenderer(ModItems.LOLLIPOP_CLOWN_TOY, PlushieItemRenderer.create());
+
+        EntityRendererRegistry.register(ModEntities.STUFFIE, PlushieEntityRenderer::create);
+        BlockEntityRendererRegistry.register(ModBlockEntities.STUFFIE_TOY, ToyBlockRenderer::create);
+        GeoItemRenderer.registerItemRenderer(ModItems.STUFFIE_TOY, PlushieItemRenderer.create());
 
         EntityRendererRegistry.register(ModEntities.BALLOON, BalloonRenderer::new);
 

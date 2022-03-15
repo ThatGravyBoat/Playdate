@@ -7,6 +7,7 @@ import net.minecraft.util.registry.Registry;
 import tech.thatgravyboat.playdate.Playdate;
 import tech.thatgravyboat.playdate.common.blocks.ModBlocks;
 import tech.thatgravyboat.playdate.common.constants.BalloonType;
+import tech.thatgravyboat.playdate.common.constants.CuddleCub;
 import tech.thatgravyboat.playdate.common.constants.PlushieItem;
 
 public class ModItems {
@@ -23,6 +24,8 @@ public class ModItems {
     public static final PlushItem PETUNIA_PIG_TOY = new PlushItem(ModBlocks.PETUNIA_PIG_TOY, PlushieItem.PETUNIA_PIG_TOY, GROUP_SETTINGS);
     public static final PlushItem HAPPY_SUN_TOY = new PlushItem(ModBlocks.HAPPY_SUN_TOY, PlushieItem.HAPPY_SUN_TOY, GROUP_SETTINGS);
     public static final PlushItem LOLLIPOP_CLOWN_TOY = new PlushItem(ModBlocks.LOLLIPOP_CLOWN_TOY, PlushieItem.LOLLIPOP_CLOWN_TOY, GROUP_SETTINGS);
+    public static final PlushItem STUFFIE_TOY = new PlushItem(ModBlocks.STUFFIE_TOY, PlushieItem.STUFFIE_TOY, GROUP_SETTINGS);
+
     public static final PlushItem CREEPER_PLUSHIE = new PlushItem(ModBlocks.CREEPER_PLUSHIE, PlushieItem.CREEPER, GROUP_SETTINGS);
     public static final PlushItem DINO_PLUSHIE = new PlushItem(ModBlocks.DINO_PLUSHIE, PlushieItem.DINO, GROUP_SETTINGS);
     public static final PlushItem ENDERMAN_PLUSHIE = new PlushItem(ModBlocks.ENDERMAN_PLUSHIE, PlushieItem.ENDERMAN, GROUP_SETTINGS);
@@ -41,6 +44,26 @@ public class ModItems {
     public static final PlushItem RABBIT_PLUSHIE = new PlushItem(ModBlocks.RABBIT_PLUSHIE, PlushieItem.RABBIT, GROUP_SETTINGS);
     public static final PlushItem SOCK_MONKEY = new PlushItem(ModBlocks.SOCK_MONKEY, PlushieItem.SOCK_MONKEY, GROUP_SETTINGS);
     public static final PlushItem ROBOT = new PlushItem(ModBlocks.ROBOT, PlushieItem.ROBOT, GROUP_SETTINGS);
+
+    //region Cuddle Cubs
+    public static final Item CUDDLE_HEART = new Item(GROUP_SETTINGS);
+    public static final CuddleCubItem AROMANTIC_CUB = new CuddleCubItem(ModBlocks.AROMANTIC_CUB, CuddleCub.AROMANTIC, GROUP_SETTINGS);
+    public static final CuddleCubItem ASEXUAL_CUB = new CuddleCubItem(ModBlocks.ASEXUAL_CUB, CuddleCub.ASEXUAL, GROUP_SETTINGS);
+    public static final CuddleCubItem BISEXUAL_CUB = new CuddleCubItem(ModBlocks.BISEXUAL_CUB, CuddleCub.BISEXUAL, GROUP_SETTINGS);
+    public static final CuddleCubItem PRIDE_CUB = new CuddleCubItem(ModBlocks.PRIDE_CUB, CuddleCub.PRIDE, GROUP_SETTINGS);
+    public static final CuddleCubItem GENDERQUEER_CUB = new CuddleCubItem(ModBlocks.GENDERQUEER_CUB, CuddleCub.GENDERQUEER, GROUP_SETTINGS);
+    public static final CuddleCubItem LESBIAN_CUB = new CuddleCubItem(ModBlocks.LESBIAN_CUB, CuddleCub.LESBIAN, GROUP_SETTINGS);
+    public static final CuddleCubItem NONBINARY_CUB = new CuddleCubItem(ModBlocks.NONBINARY_CUB, CuddleCub.NONBINARY, GROUP_SETTINGS);
+    public static final CuddleCubItem PANSEXUAL_CUB = new CuddleCubItem(ModBlocks.PANSEXUAL_CUB, CuddleCub.PANSEXUAL, GROUP_SETTINGS);
+    public static final CuddleCubItem TRANS_CUB = new CuddleCubItem(ModBlocks.TRANS_CUB, CuddleCub.TRANS, GROUP_SETTINGS);
+    public static final CuddleCubItem PANDA_CUB = new CuddleCubItem(ModBlocks.PANDA_CUB, CuddleCub.PANDA, GROUP_SETTINGS);
+    public static final CuddleCubItem POLAR_CUB = new CuddleCubItem(ModBlocks.POLAR_CUB, CuddleCub.POLAR, GROUP_SETTINGS);
+    public static final CuddleCubItem STUFFIE_CUB = new CuddleCubItem(ModBlocks.STUFFIE_CUB, CuddleCub.STUFFIE, GROUP_SETTINGS);
+    public static final CuddleCubItem COOL_CUB = new CuddleCubItem(ModBlocks.COOL_CUB, CuddleCub.COOL, GROUP_SETTINGS);
+    public static final CuddleCubItem BROWN_CUB = new CuddleCubItem(ModBlocks.BROWN_CUB, CuddleCub.BROWN, GROUP_SETTINGS);
+    public static final CuddleCubItem HONEY_CUB = new CuddleCubItem(ModBlocks.HONEY_CUB, CuddleCub.HONEY, GROUP_SETTINGS);
+
+    //endregion
 
     public static void register() {
         Registry.register(Registry.ITEM, Playdate.modId("softwood"), SOFTWOOD);
@@ -63,6 +86,7 @@ public class ModItems {
         Registry.register(Registry.ITEM, Playdate.modId("petunia_pig_toy"), PETUNIA_PIG_TOY);
         Registry.register(Registry.ITEM, Playdate.modId("happy_sun_toy"), HAPPY_SUN_TOY);
         Registry.register(Registry.ITEM, Playdate.modId("lollipop_clown_toy"), LOLLIPOP_CLOWN_TOY);
+        Registry.register(Registry.ITEM, Playdate.modId("stuffie_toy"), STUFFIE_TOY);
 
         Registry.register(Registry.ITEM, Playdate.modId("cymbal_monkey"), CYMBAL_MONKEY);
         Registry.register(Registry.ITEM, Playdate.modId("fox_plush"), FOX_PLUSHIE);
@@ -71,6 +95,25 @@ public class ModItems {
         Registry.register(Registry.ITEM, Playdate.modId("rabbit_plush"), RABBIT_PLUSHIE);
         Registry.register(Registry.ITEM, Playdate.modId("sock_monkey"), SOCK_MONKEY);
         Registry.register(Registry.ITEM, Playdate.modId("robot"), ROBOT);
+
+        //region Cuddle Cubs
+        Registry.register(Registry.ITEM, Playdate.modId("cuddle_heart"), CUDDLE_HEART);
+        Registry.register(Registry.ITEM, Playdate.modId("aromantic_cub"), AROMANTIC_CUB);
+        Registry.register(Registry.ITEM, Playdate.modId("asexual_cub"), ASEXUAL_CUB);
+        Registry.register(Registry.ITEM, Playdate.modId("bisexual_cub"), BISEXUAL_CUB);
+        Registry.register(Registry.ITEM, Playdate.modId("pride_cub"), PRIDE_CUB);
+        Registry.register(Registry.ITEM, Playdate.modId("genderqueer_cub"), GENDERQUEER_CUB);
+        Registry.register(Registry.ITEM, Playdate.modId("lesbian_cub"), LESBIAN_CUB);
+        Registry.register(Registry.ITEM, Playdate.modId("nonbinary_cub"), NONBINARY_CUB);
+        Registry.register(Registry.ITEM, Playdate.modId("pansexual_cub"), PANSEXUAL_CUB);
+        Registry.register(Registry.ITEM, Playdate.modId("trans_cub"), TRANS_CUB);
+        Registry.register(Registry.ITEM, Playdate.modId("panda_cub"), PANDA_CUB);
+        Registry.register(Registry.ITEM, Playdate.modId("polar_cub"), POLAR_CUB);
+        Registry.register(Registry.ITEM, Playdate.modId("stuffie_cub"), STUFFIE_CUB);
+        Registry.register(Registry.ITEM, Playdate.modId("cool_cub"), COOL_CUB);
+        Registry.register(Registry.ITEM, Playdate.modId("brown_cub"), BROWN_CUB);
+        Registry.register(Registry.ITEM, Playdate.modId("honey_cub"), HONEY_CUB);
+        //endregion
     }
 
 

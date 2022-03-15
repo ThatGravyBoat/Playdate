@@ -6,13 +6,16 @@ import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.state.StateManager;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.function.Supplier;
 
-public class PlushieBlock extends HorizontalFacingBlock implements BlockEntityProvider {
+public class PlushieBlock extends Block implements BlockEntityProvider {
+
+    public static final EightDirectionProperty FACING = new EightDirectionProperty();
 
     public static final VoxelShape SHAPE = Block.createCuboidShape(2.5, 0, 2.5, 13.5, 14, 13.5);
 
@@ -31,7 +34,8 @@ public class PlushieBlock extends HorizontalFacingBlock implements BlockEntityPr
     @Nullable
     @Override
     public BlockState getPlacementState(ItemPlacementContext ctx) {
-        return this.getDefaultState().with(FACING, ctx.getPlayerFacing().getOpposite());
+        var value = EightDirectionProperty.Direction.VALUES[MathHelper.floor((double) (ctx.getPlayerYaw() * 8.0F / 360.0F) + 0.5D) & 7];
+        return this.getDefaultState().with(FACING, value);
     }
 
     @Override

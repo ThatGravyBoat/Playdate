@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "wHp",
+    " S "
+  ],
+  "key": {
+    "S": {
+      "item": "playdate:stuffing"
+    },
+    "H": {
+      "item": "playdate:cuddle_heart"
+    },
+    "w": {
+      "item": "minecraft:white_dye"
+    },
+    "p": {
+      "item": "minecraft:pink_dye"
+    }
+  },
+  "result": {
+    "item": "playdate:trans_cub",
+    "count": 1
+  }
+}

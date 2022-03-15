@@ -57,6 +57,7 @@ public class BalloonRenderer extends EntityRenderer<BalloonEntity> implements IG
         modelProvider.setLivingAnimations(entity, this.getUniqueID(entity), predicate);
 
         stack.translate(0, 0.01f, 0);
+        stack.multiply(Vec3f.NEGATIVE_Y.getDegreesQuaternion(entity.getUuid().getLeastSignificantBits() % 360));
         MinecraftClient.getInstance().getTextureManager().bindTexture(getTexture(entity));
         RenderLayer renderType = getRenderType(entity, partialTicks, stack, bufferIn, null, packedLightIn, getTexture(entity));
         boolean invis = entity.isInvisibleTo(MinecraftClient.getInstance().player);
