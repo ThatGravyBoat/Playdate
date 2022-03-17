@@ -24,6 +24,11 @@ public enum PlushieEntity {
             modId("geo/stuffie.geo.json"),
             modId("textures/entity/stuffie_possessed.png"),
             modId("animations/stuffie.animation.json")
+    ),
+    SOCK_MONKEY(
+            modId("geo/sock_monkey_possessed.geo.json"),
+            modId("textures/entity/sock_monkey_possessed.png"),
+            modId("animations/sock_monkey.animation.json")
     );
 
     public final ResourceLocation model;

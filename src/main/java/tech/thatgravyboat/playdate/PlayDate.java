@@ -80,6 +80,11 @@ public class PlayDate {
                 .add(Attributes.ATTACK_DAMAGE, 6)
                 .add(Attributes.FOLLOW_RANGE, 60)
                 .add(Attributes.MOVEMENT_SPEED, 0.4).build());
+        event.put(ModEntities.SOCK_MONKEY.get(), ToyEntity.createMobAttributes()
+                .add(Attributes.MAX_HEALTH, 20)
+                .add(Attributes.ATTACK_DAMAGE, 3)
+                .add(Attributes.FOLLOW_RANGE, 60)
+                .add(Attributes.MOVEMENT_SPEED, 0.3).build());
     }
 
     public static void onItemuse(PlayerInteractEvent.RightClickItem event) {

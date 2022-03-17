@@ -1,6 +1,8 @@
 package tech.thatgravyboat.playdate.client;
 
 import net.minecraft.client.gui.screens.MenuScreens;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraftforge.client.event.ColorHandlerEvent;
@@ -11,6 +13,7 @@ import tech.thatgravyboat.playdate.client.rendering.plushie.PlushieBlockRenderer
 import tech.thatgravyboat.playdate.client.rendering.plushie.PlushieEntityRenderer;
 import tech.thatgravyboat.playdate.client.screens.PiggyBankScreen;
 import tech.thatgravyboat.playdate.common.blocks.ModBlockEntities;
+import tech.thatgravyboat.playdate.common.blocks.ModBlocks;
 import tech.thatgravyboat.playdate.common.containers.ModContainers;
 import tech.thatgravyboat.playdate.common.entity.ModEntities;
 import tech.thatgravyboat.playdate.common.item.BalloonItem;
@@ -34,7 +37,6 @@ public class PlayDateClient {
         BlockEntityRenderers.register(ModBlockEntities.SNOWY_FOX_PLUSHIE.get(), PlushieBlockRenderer::create);
         BlockEntityRenderers.register(ModBlockEntities.PIGGY_BANK.get(), PlushieBlockRenderer::create);
         BlockEntityRenderers.register(ModBlockEntities.RABBIT_PLUSHIE.get(), PlushieBlockRenderer::create);
-        BlockEntityRenderers.register(ModBlockEntities.SOCK_MONKEY.get(), PlushieBlockRenderer::create);
         BlockEntityRenderers.register(ModBlockEntities.ROBOT.get(), PlushieBlockRenderer::create);
         BlockEntityRenderers.register(ModBlockEntities.AROMANTIC_CUB.get(), PlushieBlockRenderer::createCuddleCub);
         BlockEntityRenderers.register(ModBlockEntities.ASEXUAL_CUB.get(), PlushieBlockRenderer::createCuddleCub);
@@ -64,9 +66,14 @@ public class PlayDateClient {
         EntityRenderers.register(ModEntities.STUFFIE.get(), PlushieEntityRenderer::create);
         BlockEntityRenderers.register(ModBlockEntities.STUFFIE_TOY.get(), ToyBlockRenderer::create);
 
+        EntityRenderers.register(ModEntities.SOCK_MONKEY.get(), PlushieEntityRenderer::create);
+        BlockEntityRenderers.register(ModBlockEntities.SOCK_MONKEY.get(), ToyBlockRenderer::create);
+
         EntityRenderers.register(ModEntities.BALLOON.get(), BalloonEntityRenderer::new);
 
         MenuScreens.register(ModContainers.PIGGY_BANK.get(), PiggyBankScreen::new);
+
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.MESH_WALL.get(), RenderType.cutout());
     }
 
     public static void onItemColors(ColorHandlerEvent.Item event) {

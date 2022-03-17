@@ -37,6 +37,8 @@ public class ModEntities {
             ModBlocks.LOLLIPOP_CLOWN_TOY, PlushieEntity.LOLLIPOP_CLOWN, 1.25f, 2.95f);
     public static final RegistryObject<EntityType<ToyEntity>> STUFFIE = createToy("stuffie",
             ModBlocks.STUFFIE_TOY, PlushieEntity.STUFFIE, 1.25f, 2.95f);
+    public static final RegistryObject<EntityType<ToyEntity>> SOCK_MONKEY = createToy("sock_monkey",
+            ModBlocks.SOCK_MONKEY, PlushieEntity.SOCK_MONKEY, 0.9f, 0.9f);
 
     private static RegistryObject<EntityType<ToyEntity>> createToy(String id, Supplier<Block> toy, PlushieEntity plushie, float width, float height) {
         return ENTITY_TYPES.register(id, () -> EntityType.Builder.<ToyEntity>of((type, world) -> new ToyEntity(type, toy.get(), world, plushie), MobCategory.MONSTER)

@@ -1,0 +1,31 @@
+{
+  "replace": false,
+  "values": [
+    "playdate:letter_a",
+    "playdate:letter_b",
+    "playdate:letter_c",
+    "playdate:letter_d",
+    "playdate:letter_e",
+    "playdate:letter_f",
+    "playdate:letter_g",
+    "playdate:letter_h",
+    "playdate:letter_i",
+    "playdate:letter_j",
+    "playdate:letter_k",
+    "playdate:letter_l",
+    "playdate:letter_m",
+    "playdate:letter_n",
+    "playdate:letter_o",
+    "playdate:letter_p",
+    "playdate:letter_q",
+    "playdate:letter_r",
+    "playdate:letter_s",
+    "playdate:letter_t",
+    "playdate:letter_u",
+    "playdate:letter_v",
+    "playdate:letter_w",
+    "playdate:letter_x",
+    "playdate:letter_y",
+    "playdate:letter_z"
+  ]
+}

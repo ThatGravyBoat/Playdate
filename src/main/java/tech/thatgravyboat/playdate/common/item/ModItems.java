@@ -9,7 +9,10 @@ import tech.thatgravyboat.playdate.PlayDate;
 import tech.thatgravyboat.playdate.common.blocks.ModBlocks;
 import tech.thatgravyboat.playdate.common.constants.BalloonType;
 import tech.thatgravyboat.playdate.common.constants.CuddleCub;
+import tech.thatgravyboat.playdate.common.constants.Letters;
 import tech.thatgravyboat.playdate.common.constants.PlushieItem;
+
+import java.util.List;
 
 public class ModItems {
 
@@ -19,6 +22,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> STUFFING = ITEMS.register("stuffing", () -> new Item(GROUP_SETTINGS));
     public static final RegistryObject<Item> SOFTWOOD = ITEMS.register("softwood", () -> new BlockItem(ModBlocks.SOFTWOOD.get(), GROUP_SETTINGS));
+    public static final RegistryObject<Item> LIGHT_SOFTWOOD = ITEMS.register("light_softwood", () -> new BlockItem(ModBlocks.LIGHT_SOFTWOOD.get(), GROUP_SETTINGS));
+    public static final RegistryObject<Item> MESH_WALL = ITEMS.register("mesh_wall", () -> new BlockItem(ModBlocks.MESH_WALL.get(), GROUP_SETTINGS));
+    public static final RegistryObject<Item> BALLPIT = ITEMS.register("ballpit", () -> new BlockItem(ModBlocks.BALLPIT.get(), GROUP_SETTINGS));
     public static final RegistryObject<Item> BOTTLED_SOUL = ITEMS.register("bottled_soul", () -> new Item(new Item.Properties().stacksTo(1).tab(ModItemGroups.GROUP)));
     public static final RegistryObject<Item> BALLOON = ITEMS.register("balloon", () -> new BalloonItem(BalloonType.COLORED, GROUP_SETTINGS));
     public static final RegistryObject<Item> SUN_BALLOON = ITEMS.register("happy_sun_balloon", () -> new BalloonItem(BalloonType.SUN, GROUP_SETTINGS));
@@ -80,5 +86,7 @@ public class ModItems {
     public static final RegistryObject<Item> HONEY_CUB = ITEMS.register("honey_cub",
             () -> new CuddleCubItem(ModBlocks.HONEY_CUB.get(), CuddleCub.HONEY, GROUP_SETTINGS));
     //endregion
+
+    public static final List<RegistryObject<BlockItem>> LETTER_BLOCKS = Letters.createBlockItems();
 
 }

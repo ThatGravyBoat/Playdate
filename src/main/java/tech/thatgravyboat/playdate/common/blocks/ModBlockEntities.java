@@ -59,7 +59,7 @@ public class ModBlockEntities {
     public static final RegistryObject<BlockEntityType<?>> RABBIT_PLUSHIE = BLOCK_ENTITY_TYPES.register("rabbit_plush_entity",
             () -> createBlock(PlushieBlockEntity::new, PlushieItem.RABBIT, ModBlocks.RABBIT_PLUSHIE.get()));
     public static final RegistryObject<BlockEntityType<?>> SOCK_MONKEY = BLOCK_ENTITY_TYPES.register("sock_monkey_entity",
-            () -> createBlock(PlushieBlockEntity::new, PlushieItem.SOCK_MONKEY, ModBlocks.SOCK_MONKEY.get()));
+            () -> createBlock(ToyBlockEntity::new, PlushieItem.SOCK_MONKEY, ModBlocks.SOCK_MONKEY.get()));
     public static final RegistryObject<BlockEntityType<?>> ROBOT = BLOCK_ENTITY_TYPES.register("robot_entity",
             () -> createBlock(PlushieBlockEntity::new, PlushieItem.ROBOT, ModBlocks.ROBOT.get()));
 

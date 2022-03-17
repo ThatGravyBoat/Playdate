@@ -1,6 +1,7 @@
 package tech.thatgravyboat.playdate.common.blocks;
 
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.IronBarsBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
@@ -13,7 +14,10 @@ import tech.thatgravyboat.playdate.common.blocks.custom.CymbalMonkeyPlushieBlock
 import tech.thatgravyboat.playdate.common.blocks.custom.EndermanPlushieBlock;
 import tech.thatgravyboat.playdate.common.blocks.custom.ToadstoolPlushieBlock;
 import tech.thatgravyboat.playdate.common.blocks.custom.piggybank.PiggyBankPlushieBlock;
+import tech.thatgravyboat.playdate.common.constants.Letters;
 import tech.thatgravyboat.playdate.common.entity.ModEntities;
+
+import java.util.List;
 
 public class ModBlocks {
 
@@ -25,9 +29,10 @@ public class ModBlocks {
 
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, PlayDate.MODID);
 
-
     public static final RegistryObject<Block> SOFTWOOD = BLOCKS.register("softwood",
-            () -> new Block(BlockBehaviour.Properties.of(Material.WOOD).strength(1).sound(SoundType.WOOD)));
+            () -> new LetterBlock(-2, BlockBehaviour.Properties.of(Material.WOOD).strength(1).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> LIGHT_SOFTWOOD = BLOCKS.register("light_softwood",
+            () -> new LetterBlock(-1, BlockBehaviour.Properties.of(Material.WOOD).strength(1).sound(SoundType.WOOD)));
 
     public static final RegistryObject<Block> PETUNIA_PIG_TOY = BLOCKS.register("petunia_pig_toy",
             () -> new ToyBlock(ModEntities.PETUNIA_PIG, ModBlockEntities.PETUNIA_PIG_TOY, PLUSHIE_SETTINGS));
@@ -70,7 +75,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> RABBIT_PLUSHIE = BLOCKS.register("rabbit_plush",
             () -> new PlushieBlock(ModBlockEntities.RABBIT_PLUSHIE, PLUSHIE_SETTINGS));
     public static final RegistryObject<Block> SOCK_MONKEY = BLOCKS.register("sock_monkey",
-            () -> new PlushieBlock(ModBlockEntities.SOCK_MONKEY, PLUSHIE_SETTINGS));
+            () -> new ToyBlock(ModEntities.SOCK_MONKEY, ModBlockEntities.SOCK_MONKEY, PLUSHIE_SETTINGS));
     public static final RegistryObject<Block> ROBOT = BLOCKS.register("robot",
             () -> new PlushieBlock(ModBlockEntities.ROBOT, METAL_SETTINGS));
 
@@ -106,4 +111,12 @@ public class ModBlocks {
     public static final RegistryObject<Block> HONEY_CUB = BLOCKS.register("honey_cub",
             () -> new PlushieBlock(ModBlockEntities.HONEY_CUB, PLUSHIE_SETTINGS));
     //endregion
+
+    public static final List<RegistryObject<Block>> LETTER_BLOCKS = Letters.createBlocks();
+
+    public static final RegistryObject<Block> BALLPIT = BLOCKS.register("ballpit",
+            () -> new BallPitBlock(BlockBehaviour.Properties.of(Material.WOOL).dynamicShape()));
+
+    public static final RegistryObject<Block> MESH_WALL = BLOCKS.register("mesh_wall",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.of(Material.WOOL).strength(0.3F)));
 }
