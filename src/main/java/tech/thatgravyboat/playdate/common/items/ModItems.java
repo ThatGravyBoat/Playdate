@@ -8,14 +8,20 @@ import tech.thatgravyboat.playdate.Playdate;
 import tech.thatgravyboat.playdate.common.blocks.ModBlocks;
 import tech.thatgravyboat.playdate.common.constants.BalloonType;
 import tech.thatgravyboat.playdate.common.constants.CuddleCub;
+import tech.thatgravyboat.playdate.common.constants.Letters;
 import tech.thatgravyboat.playdate.common.constants.PlushieItem;
+
+import java.util.List;
 
 public class ModItems {
 
-    private static final FabricItemSettings GROUP_SETTINGS = new FabricItemSettings().group(Playdate.ITEM_GROUP);
+    public static final FabricItemSettings GROUP_SETTINGS = new FabricItemSettings().group(Playdate.ITEM_GROUP);
 
     public static final Item STUFFING = new Item(GROUP_SETTINGS);
     public static final Item SOFTWOOD = new BlockItem(ModBlocks.SOFTWOOD, GROUP_SETTINGS);
+    public static final Item LIGHT_SOFTWOOD = new BlockItem(ModBlocks.LIGHT_SOFTWOOD, GROUP_SETTINGS);
+    public static final Item BALLPIT = new BlockItem(ModBlocks.BALLPIT, GROUP_SETTINGS);
+    public static final Item MESH_WALL = new BlockItem(ModBlocks.MESH_WALL, GROUP_SETTINGS);
     public static final Item BOTTLED_SOUL = new Item(new FabricItemSettings().maxCount(1).group(Playdate.ITEM_GROUP));
     public static final Item BALLOON = new BalloonItem(BalloonType.COLORED, GROUP_SETTINGS);
     public static final Item SUN_BALLOON = new BalloonItem(BalloonType.SUN, GROUP_SETTINGS);
@@ -62,11 +68,15 @@ public class ModItems {
     public static final CuddleCubItem COOL_CUB = new CuddleCubItem(ModBlocks.COOL_CUB, CuddleCub.COOL, GROUP_SETTINGS);
     public static final CuddleCubItem BROWN_CUB = new CuddleCubItem(ModBlocks.BROWN_CUB, CuddleCub.BROWN, GROUP_SETTINGS);
     public static final CuddleCubItem HONEY_CUB = new CuddleCubItem(ModBlocks.HONEY_CUB, CuddleCub.HONEY, GROUP_SETTINGS);
-
     //endregion
+
+    public static final List<BlockItem> LETTER_BLOCKS = Letters.createBlockItems();
 
     public static void register() {
         Registry.register(Registry.ITEM, Playdate.modId("softwood"), SOFTWOOD);
+        Registry.register(Registry.ITEM, Playdate.modId("light_softwood"), LIGHT_SOFTWOOD);
+        Registry.register(Registry.ITEM, Playdate.modId("ballpit"), BALLPIT);
+        Registry.register(Registry.ITEM, Playdate.modId("mesh_wall"), MESH_WALL);
         Registry.register(Registry.ITEM, Playdate.modId("stuffing"), STUFFING);
         Registry.register(Registry.ITEM, Playdate.modId("bottled_soul"), BOTTLED_SOUL);
         Registry.register(Registry.ITEM, Playdate.modId("balloon"), BALLOON);
@@ -114,6 +124,10 @@ public class ModItems {
         Registry.register(Registry.ITEM, Playdate.modId("brown_cub"), BROWN_CUB);
         Registry.register(Registry.ITEM, Playdate.modId("honey_cub"), HONEY_CUB);
         //endregion
+
+        for (int i = 0; i < LETTER_BLOCKS.size(); i++) {
+            Registry.register(Registry.ITEM, Letters.formatFromId(i), LETTER_BLOCKS.get(i));
+        }
     }
 
 

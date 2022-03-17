@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "playdate:letter_blocks"
+    }
+  ],
+  "result": {
+    "item": "playdate:light_softwood",
+    "count": 1
+  }
+}

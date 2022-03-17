@@ -2,10 +2,12 @@ package tech.thatgravyboat.playdate.client;
 
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.api.Environment;
+import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.rendering.v1.BlockEntityRendererRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.fabricmc.fabric.api.client.screenhandler.v1.ScreenRegistry;
+import net.minecraft.client.render.RenderLayer;
 import software.bernie.geckolib3.renderers.geo.GeoItemRenderer;
 import tech.thatgravyboat.playdate.client.rendering.*;
 import tech.thatgravyboat.playdate.client.rendering.plushie.PlushieBlockRenderer;
@@ -13,6 +15,7 @@ import tech.thatgravyboat.playdate.client.rendering.plushie.PlushieEntityRendere
 import tech.thatgravyboat.playdate.client.rendering.plushie.PlushieItemRenderer;
 import tech.thatgravyboat.playdate.client.screens.PiggyBankScreen;
 import tech.thatgravyboat.playdate.common.blocks.ModBlockEntities;
+import tech.thatgravyboat.playdate.common.blocks.ModBlocks;
 import tech.thatgravyboat.playdate.common.containers.ModContainers;
 import tech.thatgravyboat.playdate.common.entity.ModEntities;
 import tech.thatgravyboat.playdate.common.items.BalloonItem;
@@ -68,9 +71,6 @@ public class PlaydateClient implements ClientModInitializer {
 
         BlockEntityRendererRegistry.register(ModBlockEntities.RABBIT_PLUSHIE, PlushieBlockRenderer::create);
         GeoItemRenderer.registerItemRenderer(ModItems.RABBIT_PLUSHIE, PlushieItemRenderer.create());
-
-        BlockEntityRendererRegistry.register(ModBlockEntities.SOCK_MONKEY, PlushieBlockRenderer::create);
-        GeoItemRenderer.registerItemRenderer(ModItems.SOCK_MONKEY, PlushieItemRenderer.create());
 
         BlockEntityRendererRegistry.register(ModBlockEntities.ROBOT, PlushieBlockRenderer::create);
         GeoItemRenderer.registerItemRenderer(ModItems.ROBOT, PlushieItemRenderer.create());
@@ -138,9 +138,15 @@ public class PlaydateClient implements ClientModInitializer {
         BlockEntityRendererRegistry.register(ModBlockEntities.STUFFIE_TOY, ToyBlockRenderer::create);
         GeoItemRenderer.registerItemRenderer(ModItems.STUFFIE_TOY, PlushieItemRenderer.create());
 
+        EntityRendererRegistry.register(ModEntities.SOCK_MONKEY, PlushieEntityRenderer::create);
+        BlockEntityRendererRegistry.register(ModBlockEntities.SOCK_MONKEY, ToyBlockRenderer::create);
+        GeoItemRenderer.registerItemRenderer(ModItems.SOCK_MONKEY, PlushieItemRenderer.create());
+
         EntityRendererRegistry.register(ModEntities.BALLOON, BalloonRenderer::new);
 
         ScreenRegistry.register(ModContainers.PIGGY_BANK, PiggyBankScreen::new);
+
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.MESH_WALL, RenderLayer.getCutout());
 
         ColorProviderRegistry.ITEM.register(
                 (stack, tintIndex) -> tintIndex == 0 && stack.getItem() instanceof BalloonItem balloon ? balloon.getColor(stack) : 0xffffff,

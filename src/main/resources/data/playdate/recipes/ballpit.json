@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "DDD",
+    "DSD",
+    "DDD"
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:slime_block"
+    },
+    "D": {
+      "tag": "playdate:dyes"
+    }
+  },
+  "result": {
+    "item": "playdate:ballpit",
+    "count": 3
+  }
+}

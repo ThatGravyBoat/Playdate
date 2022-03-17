@@ -36,7 +36,7 @@ public class ModBlockEntities {
     public static final BlockEntityType<?> SNOWY_FOX_PLUSHIE = createBlock(PlushieBlockEntity::new, PlushieItem.SNOWY_FOX, ModBlocks.SNOWY_FOX_PLUSHIE);
     public static final BlockEntityType<?> PIGGY_BANK = createBlock(PiggyBankPlushieBlockEntity::new, PlushieItem.PIGGY_BANK, ModBlocks.PIGGY_BANK);
     public static final BlockEntityType<?> RABBIT_PLUSHIE = createBlock(PlushieBlockEntity::new, PlushieItem.RABBIT, ModBlocks.RABBIT_PLUSHIE);
-    public static final BlockEntityType<?> SOCK_MONKEY = createBlock(PlushieBlockEntity::new, PlushieItem.SOCK_MONKEY, ModBlocks.SOCK_MONKEY);
+    public static final BlockEntityType<?> SOCK_MONKEY = createBlock(ToyBlockEntity::new, PlushieItem.SOCK_MONKEY, ModBlocks.SOCK_MONKEY);
     public static final BlockEntityType<?> ROBOT = createBlock(PlushieBlockEntity::new, PlushieItem.ROBOT, ModBlocks.ROBOT);
 
     //region Cuddle Cubs
