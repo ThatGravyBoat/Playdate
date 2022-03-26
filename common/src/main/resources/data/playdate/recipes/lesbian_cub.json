@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "oHm",
+    "pSw"
+  ],
+  "key": {
+    "S": {
+      "item": "playdate:stuffing"
+    },
+    "H": {
+      "item": "playdate:cuddle_heart"
+    },
+    "w": {
+      "item": "minecraft:white_dye"
+    },
+    "p": {
+      "item": "minecraft:pink_dye"
+    },
+    "o": {
+      "item": "minecraft:orange_dye"
+    },
+    "m": {
+      "item": "minecraft:magenta_dye"
+    }
+  },
+  "result": {
+    "item": "playdate:lesbian_cub",
+    "count": 1
+  }
+}

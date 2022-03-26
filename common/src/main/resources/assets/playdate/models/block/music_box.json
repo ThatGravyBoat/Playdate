@@ -1,0 +1,26 @@
+{
+  "parent":"playdate:block/plush",
+  "textures":{
+    "0":"playdate:block/music_box",
+    "particle":"playdate:block/music_box"
+  },
+  "display": {
+    "gui": {
+      "scale": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "rotation": [
+        15,
+        -145,
+        0
+      ],
+      "translation": [
+        0,
+        -5.25,
+        0
+      ]
+    }
+  }
+}

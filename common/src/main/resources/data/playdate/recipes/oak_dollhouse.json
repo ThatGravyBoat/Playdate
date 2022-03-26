@@ -1,0 +1,1 @@
+{"type":"minecraft:crafting_shaped","pattern":["PPP","GDG","PPP"],"key":{"D":{"item":"minecraft:oak_door"},"G":{"item":"minecraft:glass_pane"},"P":{"item":"minecraft:oak_planks"}},"result":{"item":"playdate:oak_dollhouse","count":1}}

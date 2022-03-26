@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "x",
+    "y"
+  ],
+  "key": {
+    "x": {
+      "item": "minecraft:pink_dye"
+    },
+    "y": {
+      "item": "playdate:stuffing"
+    }
+  },
+  "result": {
+    "item": "playdate:petunia_pig_plush",
+    "count": 1
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "gHw",
+    " S ",
+    " p "
+  ],
+  "key": {
+    "S": {
+      "item": "playdate:stuffing"
+    },
+    "H": {
+      "item": "playdate:cuddle_heart"
+    },
+    "g": {
+      "item": "minecraft:green_dye"
+    },
+    "p": {
+      "item": "minecraft:purple_dye"
+    },
+    "w": {
+      "item": "minecraft:white_dye"
+    }
+  },
+  "result": {
+    "item": "playdate:genderqueer_cub",
+    "count": 1
+  }
+}

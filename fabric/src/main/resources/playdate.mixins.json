@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "package": "tech.thatgravyboat.fabric.playdate.mixin",
+  "compatibilityLevel": "JAVA_16",
+  "mixins": [
+    "MixinLivingEntity"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

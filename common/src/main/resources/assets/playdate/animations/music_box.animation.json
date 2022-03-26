@@ -1,0 +1,33 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"spin": {
+			"loop": true,
+			"animation_length": 3.4,
+			"bones": {
+				"bone2": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.85": {
+							"vector": [0, 90, 0]
+						},
+						"1.7": {
+							"vector": [0, 180, 0]
+						},
+						"2.55": {
+							"vector": [0, 270, 0]
+						},
+						"3.4": {
+							"vector": [0, 360, 0]
+						}
+					}
+				}
+			}
+		},
+		"idle": {
+			"loop": true
+		}
+	}
+}

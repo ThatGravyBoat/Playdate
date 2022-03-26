@@ -1,0 +1,1 @@
+{"type":"minecraft:crafting_shaped","pattern":["PPP","RNR","PPP"],"key":{"R":{"item":"minecraft:redstone"},"N":{"item":"minecraft:note_block"},"P":{"tag":"minecraft:planks"}},"result":{"item":"playdate:music_box","count":1}}

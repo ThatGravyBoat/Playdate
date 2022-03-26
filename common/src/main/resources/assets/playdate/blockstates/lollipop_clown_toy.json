@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "playdate:block/lollipop_clown_toy" },
+    "facing=south": { "model": "playdate:block/lollipop_clown_toy", "y":  180},
+    "facing=west": { "model": "playdate:block/lollipop_clown_toy", "y":  270},
+    "facing=east": { "model": "playdate:block/lollipop_clown_toy", "y":  90}
+  }
+}

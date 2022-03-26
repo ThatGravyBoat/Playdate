@@ -1,0 +1,7 @@
+{
+  "parent": "playdate:block/plush",
+  "textures": {
+    "0": "playdate:block/wheelie_pup",
+    "particle": "playdate:block/wheelie_pup"
+  }
+}
