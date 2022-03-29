@@ -2,16 +2,19 @@
   "schemaVersion": 1,
   "id": "playdate",
   "version": "${version}",
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Playdate",
+  "description": "Children's toys and decor with an optional horror aspect!",
   "authors": [
-    "Me!"
+    "Dev - ThatGravyBoat",
+    "Artist - Frogipher",
+    "Walking Animations - Joosh",
+    "Former Author - Yoruniii"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/playdate",
+    "sources": "https://github.com/Toadstool-Studios/Playdate"
   },
-  "license": "Insert License Here",
+  "license": "All-Rights-Reserved",
   "icon": "assets/playdate/icon.png",
   "environment": "*",
   "entrypoints": {

@@ -1,24 +1,22 @@
 modLoader = "javafml"
 loaderVersion = "[40,)"
-#issueTrackerURL = ""
-license = "Insert License Here"
+license="All rights reserved"
 
 [[mods]]
 modId = "playdate"
 version = "${version}"
-displayName = "Example Mod"
-authors = "Me!"
-description = "dsad"
-#logoFile = ""
+displayName="Playdate"
+authors="ThatGravyBoat - Dev, Frogipher - Artist, Joosh - Walking Animations"
+description="Children's toys and decor with an optional horror aspect!"
 
-[[dependencies.examplemod]]
+[[dependencies.playdate]]
     modId = "forge"
     mandatory = true
     versionRange = "[40,)"
     ordering = "NONE"
     side = "BOTH"
 
-[[dependencies.examplemod]]
+[[dependencies.playdate]]
     modId = "minecraft"
     mandatory = true
     versionRange = "[1.18.2,)"
