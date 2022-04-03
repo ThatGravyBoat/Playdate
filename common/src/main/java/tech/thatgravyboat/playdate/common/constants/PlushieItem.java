@@ -123,7 +123,7 @@ public enum PlushieItem {
     DUMMY(
             modId("geo/dummy.geo.json"),
             modId("textures/block/dummy.png"),
-            modId("animations/empty.animation.json")
+            modId("animations/dummy.animation.json")
     );
 
     public final Identifier model;

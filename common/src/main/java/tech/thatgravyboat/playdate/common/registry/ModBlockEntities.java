@@ -158,7 +158,7 @@ public class ModBlockEntities {
 
     public static final Supplier<BlockEntityType<?>> MUSIC_BOX = DOLLS.register("music_box", () -> createBlock(MusicBoxBlockEntity::new, ModBlocks.MUSIC_BOX.get()));
     public static final Supplier<BlockEntityType<?>> DUMMY = PLUSHIES.register("dummy",
-            () -> createBlock((item, type, pos, state) -> new PoweredPlushieBlockEntity(item, type, pos, state, "talking"), PlushieItem.DUMMY, ModBlocks.DUMMY.get()));
+            () -> createBlock((item, type, pos, state) -> new PoweredPlushieBlockEntity(item, type, pos, state, "chatter"), PlushieItem.DUMMY, ModBlocks.DUMMY.get()));
 
     private static BlockEntityType<?> createBlock(BlockEntityCreationWithType factory, Block... blocks) {
         AtomicReference<BlockEntityType<?>> type = new AtomicReference<>();
