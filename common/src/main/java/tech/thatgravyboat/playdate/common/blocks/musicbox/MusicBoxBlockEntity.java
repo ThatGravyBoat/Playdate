@@ -47,7 +47,9 @@ public class MusicBoxBlockEntity extends BlockEntity implements IAnimatable {
     @Override
     public boolean onSyncedBlockEvent(int type, int data) {
         if (type == 1) {
-            playSong();
+            if (this.world != null && this.world.isClient()) {
+                playSong();
+            }
             return true;
         }
         return super.onSyncedBlockEvent(type, data);
