@@ -18,12 +18,13 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.hit.HitResult;
+import net.minecraft.util.math.MathHelper;
+import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.RaycastContext;
 import net.minecraft.world.World;
 import software.bernie.geckolib3.GeckoLib;
 import tech.thatgravyboat.playdate.common.entity.ToyEntity;
 import tech.thatgravyboat.playdate.common.registry.*;
-import tech.thatgravyboat.playdate.mixin.ItemAccessor;
 import tech.thatgravyboat.playdate.platform.CommonServices;
 
 import java.util.Map;
@@ -33,11 +34,6 @@ public class Playdate {
     public static final ItemGroup ITEM_GROUP = CommonServices.REGISTRY.createItemGroup(modId("playdate_group"), () -> new ItemStack(ModItems.STUFFING.get()));
     
     public static void init() {
-
-        //https://github.com/Jozufozu/Flywheel/commit/15ea38ede7dfc3e136216b63bde6149359ef4080
-        //For some reason doing this stuff works
-        System.out.printf("Playdate: Successfully loaded %s", ItemAccessor.class.getName());
-
         GeckoLib.initialize();
         ModBlockEntities.register();
         ModBlocks.register();
@@ -59,10 +55,10 @@ public class Playdate {
 
     public static TypedActionResult<ItemStack> onItemUse(PlayerEntity player, ItemStack stack, World world, Hand hand) {
         if (stack.isOf(Items.GLASS_BOTTLE)) {
-            HitResult result = ItemAccessor.invokeRaycast(world, player, RaycastContext.FluidHandling.SOURCE_ONLY);
+            BlockHitResult result = raycast(world, player);
 
-            if (result.getType().equals(HitResult.Type.BLOCK) && result instanceof BlockHitResult blockResult) {
-                var blockPos = blockResult.getBlockPos();
+            if (result.getType().equals(HitResult.Type.BLOCK)) {
+                var blockPos = result.getBlockPos();
                 if (world.getBlockState(blockPos).isOf(Blocks.SOUL_SAND)) {
                     world.playSound(player, player.getX(), player.getY(), player.getZ(), SoundEvents.BLOCK_SOUL_SAND_BREAK, SoundCategory.NEUTRAL, 1, 1);
                     world.setBlockState(blockPos, Blocks.SOUL_SOIL.getDefaultState());
@@ -74,6 +70,20 @@ public class Playdate {
         }
 
         return TypedActionResult.pass(stack);
+    }
+
+    protected static BlockHitResult raycast(World world, PlayerEntity player) {
+        float f = player.getPitch();
+        float g = player.getYaw();
+        Vec3d vec3d = player.getEyePos();
+        float h = MathHelper.cos(-g * 0.017453292F - 3.1415927F);
+        float i = MathHelper.sin(-g * 0.017453292F - 3.1415927F);
+        float j = -MathHelper.cos(-f * 0.017453292F);
+        float k = MathHelper.sin(-f * 0.017453292F);
+        float l = i * j;
+        float n = h * j;
+        Vec3d vec3d2 = vec3d.add((double)l * 5.0D, (double)k * 5.0D, (double)n * 5.0D);
+        return world.raycast(new RaycastContext(vec3d, vec3d2, RaycastContext.ShapeType.OUTLINE, RaycastContext.FluidHandling.SOURCE_ONLY, player));
     }
 
     public static Identifier modId(String path) {
