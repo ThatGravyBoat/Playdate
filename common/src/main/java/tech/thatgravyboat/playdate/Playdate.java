@@ -33,6 +33,11 @@ public class Playdate {
     public static final ItemGroup ITEM_GROUP = CommonServices.REGISTRY.createItemGroup(modId("playdate_group"), () -> new ItemStack(ModItems.STUFFING.get()));
     
     public static void init() {
+
+        //https://github.com/Jozufozu/Flywheel/commit/15ea38ede7dfc3e136216b63bde6149359ef4080
+        //For some reason doing this stuff works
+        System.out.printf("Playdate: Successfully loaded %s", ItemAccessor.class.getName());
+
         GeckoLib.initialize();
         ModBlockEntities.register();
         ModBlocks.register();
