@@ -1,0 +1,31 @@
+{
+    "type": "playdate:toy_bench",
+    "key": {
+        "P": {
+            "tag": "minecraft:planks"
+        },
+        "W": {
+            "tag": "minecraft:wool"
+        },
+        "N": {
+            "item": "minecraft:note_block"
+        },
+        "R": {
+            "item": "minecraft:red_dye"
+        },
+        "B": {
+            "item": "minecraft:blue_dye"
+        },
+        "Y": {
+            "item": "minecraft:yellow_dye"
+        }
+    },
+    "pattern": [
+        " R ",
+        "YWB",
+        "PNP"
+    ],
+    "result": {
+        "item": "playdate:music_box"
+    }
+}

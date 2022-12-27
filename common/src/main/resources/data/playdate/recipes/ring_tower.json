@@ -1,0 +1,25 @@
+{
+    "type": "playdate:toy_bench",
+    "key": {
+        "P": {
+            "tag": "minecraft:planks"
+        },
+        "R": {
+            "item": "minecraft:red_dye"
+        },
+        "B": {
+            "item": "minecraft:blue_dye"
+        },
+        "Y": {
+            "item": "minecraft:yellow_dye"
+        }
+    },
+    "pattern": [
+        " R ",
+        "YPB",
+        "PPP"
+    ],
+    "result": {
+        "item": "playdate:ring_tower"
+    }
+}

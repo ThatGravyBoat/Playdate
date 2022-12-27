@@ -1,0 +1,33 @@
+{
+    "schemaVersion": 1,
+    "id": "playdate",
+    "version": "${version}",
+    "name": "Playdate",
+    "description": "",
+    "authors": [
+        "Frogipher",
+        "ThatGravyBoat"
+    ],
+    "contact": {},
+    "license": "All-Rights-Reserved",
+    "icon": "icon.png",
+    "environment": "*",
+    "entrypoints": {
+        "main": [
+            "tech.thatgravyboat.playdate.fabric.PlaydateFabric"
+        ],
+        "client": [
+            "tech.thatgravyboat.playdate.fabric.PlaydateFabricClient"
+        ],
+        "jei_mod_plugin": [
+            "tech.thatgravyboat.playdate.common.compat.jei.JeiPlugin"
+        ]
+    },
+    "mixins": [
+        "playdate-common.mixins.json"
+    ],
+    "depends": {
+        "fabricloader": ">=0.14.11",
+        "minecraft": ">=1.19.2"
+    }
+}

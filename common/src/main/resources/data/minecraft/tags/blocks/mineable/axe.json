@@ -1,0 +1,28 @@
+{
+    "values": [
+        {
+            "required": false,
+            "id": "playdate:toy_bench"
+        },
+        {
+            "required": false,
+            "id": "playdate:ring_tower"
+        },
+        {
+            "required": false,
+            "id": "playdate:rocking_horse"
+        },
+        {
+            "required": false,
+            "id": "playdate:toy_boat"
+        },
+        {
+            "required": false,
+            "id": "playdate:toy_train"
+        },
+        {
+            "required": false,
+            "id": "playdate:music_box"
+        }
+    ]
+}

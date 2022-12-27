@@ -1,0 +1,19 @@
+{
+    "type": "playdate:toy_bench",
+    "key": {
+        "R": {
+            "item": "minecraft:red_dye"
+        },
+        "B": {
+            "item": "minecraft:brown_wool"
+        }
+    },
+    "pattern": [
+        " B ",
+        "BRB",
+        "BBB"
+    ],
+    "result": {
+        "item": "playdate:teddy_bear"
+    }
+}

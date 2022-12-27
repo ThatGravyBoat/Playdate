@@ -1,0 +1,19 @@
+{
+    "type": "playdate:toy_bench",
+    "key": {
+        "P": {
+            "item": "minecraft:pink_dye"
+        },
+        "C": {
+            "item": "minecraft:chest"
+        }
+    },
+    "pattern": [
+        "PPP",
+        "PCP",
+        "PPP"
+    ],
+    "result": {
+        "item": "playdate:piggy_bank"
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "type": "playdate:toy_bench",
+    "key": {
+        "P": {
+            "tag": "minecraft:planks"
+        },
+        "S": {
+            "item": "minecraft:stick"
+        },
+        "W": {
+            "tag": "minecraft:wool"
+        }
+    },
+    "pattern": [
+        "  P",
+        "PWP",
+        "S S"
+    ],
+    "result": {
+        "item": "playdate:rocking_horse"
+    }
+}

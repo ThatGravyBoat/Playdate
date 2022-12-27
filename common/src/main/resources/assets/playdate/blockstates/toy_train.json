@@ -1,0 +1,19 @@
+{
+    "variants": {
+        "facing=north": {
+            "model": "playdate:block/toy_train"
+        },
+        "facing=south": {
+            "model": "playdate:block/toy_train",
+            "y": 180
+        },
+        "facing=east": {
+            "model": "playdate:block/toy_train",
+            "y": 90
+        },
+        "facing=west": {
+            "model": "playdate:block/toy_train",
+            "y": 270
+        }
+    }
+}

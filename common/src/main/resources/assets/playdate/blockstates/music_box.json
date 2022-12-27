@@ -1,0 +1,19 @@
+{
+    "variants": {
+        "facing=north": {
+            "model": "playdate:block/music_box"
+        },
+        "facing=south": {
+            "model": "playdate:block/music_box",
+            "y": 180
+        },
+        "facing=east": {
+            "model": "playdate:block/music_box",
+            "y": 90
+        },
+        "facing=west": {
+            "model": "playdate:block/music_box",
+            "y": 270
+        }
+    }
+}

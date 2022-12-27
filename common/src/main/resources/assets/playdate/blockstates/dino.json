@@ -1,0 +1,19 @@
+{
+    "variants": {
+        "facing=north": {
+            "model": "playdate:block/dino"
+        },
+        "facing=south": {
+            "model": "playdate:block/dino",
+            "y": 180
+        },
+        "facing=east": {
+            "model": "playdate:block/dino",
+            "y": 90
+        },
+        "facing=west": {
+            "model": "playdate:block/dino",
+            "y": 270
+        }
+    }
+}

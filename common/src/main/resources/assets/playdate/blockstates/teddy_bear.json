@@ -1,0 +1,19 @@
+{
+    "variants": {
+        "facing=north": {
+            "model": "playdate:block/teddy_bear"
+        },
+        "facing=south": {
+            "model": "playdate:block/teddy_bear",
+            "y": 180
+        },
+        "facing=east": {
+            "model": "playdate:block/teddy_bear",
+            "y": 90
+        },
+        "facing=west": {
+            "model": "playdate:block/teddy_bear",
+            "y": 270
+        }
+    }
+}

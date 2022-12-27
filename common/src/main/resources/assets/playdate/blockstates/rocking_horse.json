@@ -1,0 +1,19 @@
+{
+    "variants": {
+        "facing=north": {
+            "model": "playdate:block/rocking_horse"
+        },
+        "facing=south": {
+            "model": "playdate:block/rocking_horse",
+            "y": 180
+        },
+        "facing=east": {
+            "model": "playdate:block/rocking_horse",
+            "y": 90
+        },
+        "facing=west": {
+            "model": "playdate:block/rocking_horse",
+            "y": 270
+        }
+    }
+}

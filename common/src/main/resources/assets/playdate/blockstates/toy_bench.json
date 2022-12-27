@@ -1,0 +1,19 @@
+{
+    "variants": {
+        "facing=north": {
+            "model": "playdate:block/toy_bench"
+        },
+        "facing=south": {
+            "model": "playdate:block/toy_bench",
+            "y": 180
+        },
+        "facing=east": {
+            "model": "playdate:block/toy_bench",
+            "y": 90
+        },
+        "facing=west": {
+            "model": "playdate:block/toy_bench",
+            "y": 270
+        }
+    }
+}

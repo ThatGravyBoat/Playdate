@@ -1,0 +1,8 @@
+{
+    "music_box": {
+        "subtitle": "subtitles.playdate.music_box",
+        "sounds": [
+            "playdate:music_box"
+        ]
+    }
+}

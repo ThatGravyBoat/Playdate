@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "P": {
+            "tag": "minecraft:planks"
+        },
+        "D": {
+            "tag": "playdate:dyes"
+        },
+        "W": {
+            "tag": "minecraft:wool"
+        }
+    },
+    "pattern": [
+        "WD",
+        "PP"
+    ],
+    "result": {
+        "item": "playdate:toy_bench"
+    }
+}

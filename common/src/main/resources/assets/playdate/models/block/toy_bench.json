@@ -1,0 +1,9 @@
+{
+	"parent": "minecraft:block/orientable_with_bottom",
+	"textures": {
+		"bottom": "minecraft:block/stripped_oak_log",
+		"front": "playdate:block/toy_bench_front",
+		"side": "playdate:block/toy_bench_side",
+		"top": "playdate:block/toy_bench_top"
+	}
+}
