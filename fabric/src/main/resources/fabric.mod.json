@@ -21,6 +21,9 @@
         ],
         "jei_mod_plugin": [
             "tech.thatgravyboat.playdate.common.compat.jei.JeiPlugin"
+        ],
+        "rei_client": [
+            "tech.thatgravyboat.playdate.common.compat.fabric.rei.ReiPlugin"
         ]
     },
     "mixins": [

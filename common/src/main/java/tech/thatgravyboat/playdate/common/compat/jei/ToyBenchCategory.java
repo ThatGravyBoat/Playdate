@@ -40,7 +40,7 @@ public class ToyBenchCategory implements IRecipeCategory<ToyBenchRecipe> {
 
     @Override
     public Component getTitle() {
-        return  Component.translatable("gui.playdate.toy_bench");
+        return Component.translatable("gui.playdate.toy_bench");
     }
 
     @Override
